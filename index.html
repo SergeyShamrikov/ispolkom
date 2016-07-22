@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <!-- Basic page needs
+        ============================================ -->
+        <title>Home page</title>
+        <meta charset="utf-8">
+        <meta name="author" content="">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+
+        <!-- Mobile specific metas
+        ============================================ -->
+        <meta name="viewport" content="width=1280">
+
+
+        <!-- Libs CSS
+        ============================================ -->
+
+        
+
+        <!-- Favicon
+        ============================================ -->
+        <!-- <link rel="shortcut icon" type="images/x-icon" href="images/fav_icon.ico"> -->
+
+        <!-- Theme CSS
+        ============================================ -->
+        <!-- <link rel="stylesheet" href="css/se.css"> -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Media Queries CSS
+        ============================================ -->
+        <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+
+        <!-- Old IE 
+        ============================================ -->
+
+        <!--[if lt IE 8]>
+        <div style=' clear: both; text-align:center; position: relative;'>
+          <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+            <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+          </a>
+        </div>
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/html5.js"></script>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+        <![endif]-->
+
+
+    </head>
+
+    <body>
+
+        <div class="page_wrap">
+
+            <!-- - - - - - - - - - - - - - Header - - - - - - - - - - - - - - - - -->
+            
+            <header id="header">
+                
+                <div class="header_top clearfix">
+                
+                    <!-- - - - - - - - - - - - - - Logo - - - - - - - - - - - - - - - - -->
+                
+                    <div class="logo" role="banner">
+                        <i class="fa fa-list-ul"></i>
+                        <span>Проекты</span>
+                    </div>
+                     
+                    <!-- - - - - - - - - - - - - - End of Logo - - - - - - - - - - - - - - - - -->
+    
+                    <!-- - - - - - - - - - - - - - Logo - - - - - - - - - - - - - - - - -->
+                
+                    <div class="registered_name">
+                        <span>Богомолов Р.С.</span>
+                        <a href="javascript:;" class="out_btn"><i class="fa fa-power-off"></i></a>
+                    </div>
+                     
+                    <!-- - - - - - - - - - - - - - End of Logo - - - - - - - - - - - - - - - - -->
+                    
+                </div>
+
+                <div class="header_bottom clearfix">
+                    
+                    <ul id="top_menu" class="clearfix">
+                        <li><a href="javascript:;">Проекты</a></li>
+                        <li class="current"><a href="javascript:;">Задачи</a></li>
+                        <li><a href="javascript:;">Поручения</a></li>
+                        <li><a href="javascript:;">Документы</a></li>
+                        <li><a href="javascript:;">Календарь</a></li>
+                    </ul>
+
+                    <a href="javascript:;" class="notice">
+                        <span>Уведомления</span>
+                        <span class="notice_qt">1</span>
+                    </a>
+
+                </div>
+
+            </header>
+             
+            <!-- - - - - - - - - - - - - - Left Menu - - - - - - - - - - - - - - - - -->
+        
+            <ul id="left_menu">
+    
+                <li><a href="javascript:;"><i class="fa fa-line-chart"></i><span>Пункт 1</span></a></li>
+                <li class="current"><a href="javascript:;"><i class="fa fa-list-ul"></i><span>Пункт 2</span></a></li>
+                <li><a href="javascript:;"><i class="fa fa-suitcase"></i><span>Пункт 3</span></a></li>
+                <li><a href="javascript:;"><i class="fa fa-cog"></i><span>Настройки</span></a></li>
+    
+            </ul>
+    
+            <!-- - - - - - - - - - - - - - End of Left Menu - - - - - - - - - - - - - - - - -->
+        
+            
+            <!-- - - - - - - - - - - - - - End of Header - - - - - - - - - - - - - - - - -->
+            
+            <!-- - - - - - - - - - - - - - Content - - - - - - - - - - - - - - - - -->
+            
+            <main id="content">
+                
+                <h1>Проект № 1</h1>
+
+                <div class="box1 white_bg">
+                    
+                    <ul class="navigation_1 clearfix">
+                        <li><a href="javascript:;">Карточка проекта</a></li>
+                        <li><a href="javascript:;">График</a></li>
+                        <li class="current"><a href="javascript:;">Задачи</a></li>
+                        <li><a href="javascript:;">Задания смежному отделу</a></li>
+                        <li><a href="javascript:;">Планирование</a></li>
+                        <li><a href="javascript:;">Архив</a></li>
+                    </ul>
+
+                    <ul class="filter_menu clearfix">
+                        <li><a href="javascript:;">Все</a></li>
+                        <li class="current"><a href="javascript:;">Мои задачи</a></li>
+                    </ul>
+
+                    <table class="table_toggle">
+                        
+                        <thead>
+                            
+                            <tr>
+                                <th class="section_cell">
+                                    Раздел/Задача
+
+                                    <div class="completed_checkbox">
+                                        <input type="checkbox" id="hide_completed">
+                                        <label for="hide_completed">Скрыть завершенные</label>
+                                    </div>
+
+                                </th>
+                                <th class="start_cell">Начало</th>
+                                <th class="completion_cell">Завершение</th>
+                                <th class="responsible_cell">Ответственный</th>
+                                <th class="percent_cell">%</th>
+                                <th class="status_cell">Статус</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+                            
+                            <tr class="toggle_btn_row">
+                                <td colspan="6">
+                                    <div class="toggle_btn">Предпроектная работа</div>
+                                </td>
+                            </tr>
+
+                            <tr class="toggle_row">
+
+                                <td colspan="6">
+
+                                    <div class="toggle_box">
+                                        
+                                        <table class="table_toggle">
+                                            
+                                            <tbody>
+                                                                    
+                                                <tr class="toggle_btn_row">
+                                                    <td colspan="6">
+                                                        <div class="toggle_btn">Пояснительная записка</div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr class="toggle_row">
+
+                                                    <td colspan="6">
+
+                                                        <div class="toggle_box">
+                                                            
+                                                            <table class="table_toggle">
+                                                                
+                                                                <tbody>
+                                                                     
+                                                                     <tr>
+                                                                         <td class="section_cell"><a href="javascript:;" class="link1">Составить список работ по проекту</a></td>
+                                                                         <td class="start_cell">30.06.2016</td>
+                                                                         <td class="completion_cell">30.07.2016</td>
+                                                                         <td class="responsible_cell">Богомолов Р.С.</td>
+                                                                         <td class="percent_cell">10%</td>
+                                                                         <td class="status_cell">
+                                                                             <div class="status start">Старт 8%</div>
+                                                                         </td>
+                                                                     </tr>
+
+                                                                     <tr>
+                                                                         <td class="section_cell"><a href="javascript:;" class="link1">Составить смету проекта</a></td>
+                                                                         <td class="start_cell">30.06.2016</td>
+                                                                         <td class="completion_cell">30.07.2016</td>
+                                                                         <td class="responsible_cell">Богомолов Р.С.</td>
+                                                                         <td class="percent_cell">10%</td>
+                                                                         <td class="status_cell">
+                                                                             <div class="status pause">Пауза 8%</div>
+                                                                         </td>
+                                                                     </tr>
+
+                                                                     <tr>
+                                                                         <td class="section_cell"><a href="javascript:;" class="link1">Сформировать команду проекта</a></td>
+                                                                         <td class="start_cell">30.06.2016</td>
+                                                                         <td class="completion_cell">30.07.2016</td>
+                                                                         <td class="responsible_cell">Богомолов Р.С.</td>
+                                                                         <td class="percent_cell">10%</td>
+                                                                         <td class="status_cell">
+                                                                             <div class="status pause">Пауза 8%</div>
+                                                                         </td>
+                                                                     </tr>
+
+                                                                </tbody>
+
+                                                            </table>
+
+                                                        </div>
+
+                                                    </td>
+
+                                                </tr>
+                 
+                                                <tr class="toggle_btn_row">
+                                                    <td colspan="6">
+                                                        <div class="toggle_btn">Пояснительная записка</div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr class="toggle_row">
+
+                                                    <td colspan="6">
+
+                                                        <div class="toggle_box">
+                                                            
+                                                            <table class="table_toggle">
+                                                                
+                                                                <tbody>
+                                                                     
+                                                                     <tr>
+                                                                         <td class="section_cell"><a href="javascript:;" class="link1">Составить список работ по проекту</a></td>
+                                                                         <td class="start_cell">30.06.2016</td>
+                                                                         <td class="completion_cell">30.07.2016</td>
+                                                                         <td class="responsible_cell">Богомолов Р.С.</td>
+                                                                         <td class="percent_cell">10%</td>
+                                                                         <td class="status_cell">
+                                                                             <div class="status start">Старт 8%</div>
+                                                                         </td>
+                                                                     </tr>
+
+                                                                     <tr>
+                                                                         <td class="section_cell"><a href="javascript:;" class="link1">Составить смету проекта</a></td>
+                                                                         <td class="start_cell">30.06.2016</td>
+                                                                         <td class="completion_cell">30.07.2016</td>
+                                                                         <td class="responsible_cell">Богомолов Р.С.</td>
+                                                                         <td class="percent_cell">10%</td>
+                                                                         <td class="status_cell">
+                                                                             <div class="status pause">Пауза 8%</div>
+                                                                         </td>
+                                                                     </tr>
+
+                                                                     <tr>
+                                                                         <td class="section_cell"><a href="javascript:;" class="link1">Сформировать команду проекта</a></td>
+                                                                         <td class="start_cell">30.06.2016</td>
+                                                                         <td class="completion_cell">30.07.2016</td>
+                                                                         <td class="responsible_cell">Богомолов Р.С.</td>
+                                                                         <td class="percent_cell">10%</td>
+                                                                         <td class="status_cell">
+                                                                             <div class="status pause">Пауза 8%</div>
+                                                                         </td>
+                                                                     </tr>
+
+                                                                </tbody>
+
+                                                            </table>
+
+                                                        </div>
+
+                                                    </td>
+
+                                                </tr>
+
+                                            </tbody>
+
+                                        </table>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <tr class="toggle_btn_row">
+                                <td colspan="6">
+                                    <div class="toggle_btn">Предпроектная работа</div>
+                                </td>
+                            </tr>
+
+                            <tr class="toggle_row">
+
+                                <td colspan="6">
+
+                                    <div class="toggle_box">
+                                        
+                                        <table class="table_toggle">
+                                            
+                                            <tbody>
+                                                                    
+                                                <tr class="toggle_btn_row">
+                                                    <td colspan="6">
+                                                        <div class="toggle_btn">Пояснительная записка</div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr class="toggle_row">
+
+                                                    <td colspan="6">
+
+                                                        <div class="toggle_box">
+                                                            
+                                                            <table class="table_toggle">
+                                                                
+                                                                <tbody>
+                                                                     
+                                                                     <tr>
+                                                                         <td class="section_cell"><a href="javascript:;" class="link1">Составить список работ по проекту</a></td>
+                                                                         <td class="start_cell">30.06.2016</td>
+                                                                         <td class="completion_cell">30.07.2016</td>
+                                                                         <td class="responsible_cell">Богомолов Р.С.</td>
+                                                                         <td class="percent_cell">10%</td>
+                                                                         <td class="status_cell">
+                                                                             <div class="status start">Старт 8%</div>
+                                                                         </td>
+                                                                     </tr>
+
+                                                                     <tr>
+                                                                         <td class="section_cell"><a href="javascript:;" class="link1">Составить смету проекта</a></td>
+                                                                         <td class="start_cell">30.06.2016</td>
+                                                                         <td class="completion_cell">30.07.2016</td>
+                                                                         <td class="responsible_cell">Богомолов Р.С.</td>
+                                                                         <td class="percent_cell">10%</td>
+                                                                         <td class="status_cell">
+                                                                             <div class="status pause">Пауза 8%</div>
+                                                                         </td>
+                                                                     </tr>
+
+                                                                     <tr>
+                                                                         <td class="section_cell"><a href="javascript:;" class="link1">Сформировать команду проекта</a></td>
+                                                                         <td class="start_cell">30.06.2016</td>
+                                                                         <td class="completion_cell">30.07.2016</td>
+                                                                         <td class="responsible_cell">Богомолов Р.С.</td>
+                                                                         <td class="percent_cell">10%</td>
+                                                                         <td class="status_cell">
+                                                                             <div class="status pause">Пауза 8%</div>
+                                                                         </td>
+                                                                     </tr>
+
+                                                                </tbody>
+
+                                                            </table>
+
+                                                        </div>
+
+                                                    </td>
+
+                                                </tr>
+                 
+                                                <tr class="toggle_btn_row">
+                                                    <td colspan="6">
+                                                        <div class="toggle_btn">Пояснительная записка</div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr class="toggle_row">
+
+                                                    <td colspan="6">
+
+                                                        <div class="toggle_box">
+                                                            
+                                                            <table class="table_toggle">
+                                                                
+                                                                <tbody>
+                                                                     
+                                                                     <tr>
+                                                                         <td class="section_cell"><a href="javascript:;" class="link1">Составить список работ по проекту</a></td>
+                                                                         <td class="start_cell">30.06.2016</td>
+                                                                         <td class="completion_cell">30.07.2016</td>
+                                                                         <td class="responsible_cell">Богомолов Р.С.</td>
+                                                                         <td class="percent_cell">10%</td>
+                                                                         <td class="status_cell">
+                                                                             <div class="status start">Старт 8%</div>
+                                                                         </td>
+                                                                     </tr>
+
+                                                                     <tr>
+                                                                         <td class="section_cell"><a href="javascript:;" class="link1">Составить смету проекта</a></td>
+                                                                         <td class="start_cell">30.06.2016</td>
+                                                                         <td class="completion_cell">30.07.2016</td>
+                                                                         <td class="responsible_cell">Богомолов Р.С.</td>
+                                                                         <td class="percent_cell">10%</td>
+                                                                         <td class="status_cell">
+                                                                             <div class="status pause">Пауза 8%</div>
+                                                                         </td>
+                                                                     </tr>
+
+                                                                     <tr>
+                                                                         <td class="section_cell"><a href="javascript:;" class="link1">Сформировать команду проекта</a></td>
+                                                                         <td class="start_cell">30.06.2016</td>
+                                                                         <td class="completion_cell">30.07.2016</td>
+                                                                         <td class="responsible_cell">Богомолов Р.С.</td>
+                                                                         <td class="percent_cell">10%</td>
+                                                                         <td class="status_cell">
+                                                                             <div class="status pause">Пауза 8%</div>
+                                                                         </td>
+                                                                     </tr>
+
+                                                                </tbody>
+
+                                                            </table>
+
+                                                        </div>
+
+                                                    </td>
+
+                                                </tr>
+
+                                            </tbody>
+
+                                        </table>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </main>
+            
+            <!-- - - - - - - - - - - - - - End of Content - - - - - - - - - - - - - - - - -->
+
+        </div>
+
+
+        <!-- Include Libs & Plugins
+        ============================================ -->
+        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+
+        <!-- Theme files
+        ============================================ -->
+        <script src="js/script.core.js"></script>
+        <script src="js/script.plugins.js"></script>
+        
+    </body>
+</html>
