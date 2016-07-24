@@ -120,6 +120,32 @@
         background-color: #f4f4f4;
       }
 
+      .red_bg{
+        background-color: #D15656;
+      }
+
+      .green_bg{
+        background-color: #3EB56E;
+      }
+      
+      .orenge_bg{
+        background-color: #EDA44C;
+      }
+
+      /*color*/
+
+      .green_color{
+        color: #3EB56E;
+      }
+
+      .orenge_color{
+        color: #EDA44C;
+      }
+
+      .red_color{
+        color: #D15656;
+      }
+
 /* ------------------------------------------------
 
     2. General Classes
@@ -359,8 +385,8 @@
 
     table td{
       font-size: 13px;
-      line-height: 27px;
-      padding: 10px;
+      line-height: 16px;
+      padding: 16px 10px;
     }
 
 
@@ -498,9 +524,224 @@
       display: none;
     }
 
+
+    /*Table Tasks*/
+
+  
+    .number_cell{
+      width: 50px;
+    }
+
+    .author_cell{
+      width: 12%;
+    }
+
+    .beginning1_cell{
+      width: 90px;
+    }
+
+    .period_execution1_cell{
+      width: 102px;
+    }
+
+    .priority_cell{
+      width: 50px;
+    }
+
+    .performed_day1_cell{
+      width: 8.1%;
+    }
+
+    .performed_task_cell{
+      width: 9%;
+    }
+
+    .beginning2_cell{
+      width: 95px;
+    }
+
+    .period_execution2_cell{
+      width: 98px;
+    }
+
+    .performed_day2_cell{
+      width: 8.1%;
+    }
+
+    .deviation_cell{
+      width: 7%;
+    }
+
+    .task_table th{
+      position: relative;
+      padding-bottom: 25px;
+    }
+
+    .task_table>tbody>tr>td{
+      padding: 0;
+    }
+
+    .task_table tbody tr:not(:last-child){
+      border: none;
+    }
+
+    .table_subtitle{
+      font-size: 12px;
+      line-height: 16px;
+      color: rgba(255,255,255,0.7);
+      display: block;
+    }
+
+    .task_title_icon{
+      position: absolute;
+      width: 100%;
+      bottom: 5px;
+      left: 0;
+      padding-top: 5px;
+      color: rgba(255,255,255,0.7);
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .task_title_row{
+      background-color: #f9f9f9;
+      border-bottom: 1px solid #e6e6e6 !important;
+    }
+
+    .task_title_row td{
+      padding: 0;
+    }
+
+    .task_title_qt{
+      text-align: center;
+      vertical-align: middle;
+      font-size: 18px;
+      line-height: 21px;
+      color: #fff;
+    }
+
+    .task_title{
+      font-size: 20px;
+      line-height: 24px;
+      color: #333;
+      padding: 13px 10px;
+    }
+
+    .task_table_inner{
+      background-color: #fff;
+    }
+
+    .task_table_inner tr:nth-child(even){
+      background-color: #EDEDED;
+    }
+
+    .task_table_inner td{
+      position: relative;
+    }
+
+    .task_btn{
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      padding: 16px 10px;
+      color: #fff;
+    }
+
+    .new_task>td:first-child:after{
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #22C664;
+      margin-left: 5px;
+    }
+
+    /*priority*/
+
+    [class*='priority_type']{
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      color: #fff;
+      line-height: 20px;
+      text-align: center;
+    }
+
+    .priority_type1{
+      background-color: #D15656;
+    }
+
+    .priority_type1:before{
+      content: '1';
+    }
+
+    .priority_type2{
+      background-color: #EDA44C;
+    }
+
+    .priority_type2:before{
+      content: '2';
+    }
+
+    .priority_type3{
+      background-color: #22C664;
+    }
+
+    .priority_type3:before{
+      content: '3';
+    }
+
+
+    .task_report_btn{
+      display: inline-block;
+      background-color: #F2F2F2;
+      outline: none;
+      border: 1px solid #e6e6e6;
+      border-radius: 3px;
+      color: #3E3E47;
+      font-size: 12px;
+      line-height: 14px;
+      padding: 3px 10px;
+    }
+
+    .task_report_btn:hover{
+      color: #3E3E47;
+      background-color: #e6e6e6;
+    }
+
   /* --------------------------------------------
-        4.6. Tooltips
+        4.6. Proggres Bur
   -------------------------------------------- */
+    
+    .proggres_bur{
+      position: relative;
+      height: 16px;
+      margin-right: 30px;
+    }
+
+    .proggres_bur:not(:last-child){
+      margin-bottom: 4px;
+    }
+
+    .proggres_bur_inner{
+      position: absolute;
+      height: 100%;
+      left: 0;
+      top: 0;
+      width: 0;
+    }
+
+    .proggres_bur_val{
+      position: absolute;
+      top: 0;
+      left: 100%;
+      padding-left: 9px;
+    }
 
   /* --------------------------------------------
         4.7. Dividers
@@ -564,11 +805,12 @@
         5.3. Filter Menu
   -------------------------------------------- */
     
-    .filter_menu{
+    .filter_box1{
       margin-left: 17px;
+      margin-bottom: 15px;
     }
 
-    .filter_menu:not(:last-child){
+    .filter_box2{
       margin-bottom: 15px;
     }
 
@@ -583,6 +825,7 @@
       color: #3E3E47;
       padding: 0 25px;
       border: 1px solid #e6e6e6;
+      background-color: #fff;
     }
 
     .filter_menu li a:hover{
@@ -643,6 +886,109 @@
     }
   
 
+  /* --------------------------------------------
+        5.5. Dropdown
+  -------------------------------------------- */
+    
+    .dropdown_box{
+      position: relative;
+    }
+
+    .dropdown_btn{
+      position: relative;
+      display: inline-block;
+      font-size: 14px;
+      line-height: 18px;
+      color: #fff;
+      padding: 10px 12px;
+      border-radius: 4px;
+      background-color: #16B6C6;
+      cursor: pointer;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+    }
+
+    .dropdown_btn:hover{
+      background-color: #72d3dc;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+
+    .dropdown_btn i{
+      line-height: 18px;
+      margin-right: 12px;
+    }
+
+    .dropdown_btn i:last-child{
+      margin-right: 0;
+      margin-left: 12px;
+      font-size: 12px;
+    }
+
+    .dropdown{
+      position: absolute;
+      z-index: 3;
+      width: 230px;
+      top: 100%;
+      margin-top: 1px;
+      background-color: #16B6C6;
+      border-radius: 4px;
+      overflow: hidden;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transform: translate(0, 40px);
+      -ms-transform: translate(0, 40px);
+      -o-transform: translate(0, 40px);
+      transform: translate(0, 40px);
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+
+    .dropdown_box.opened .dropdown{
+      opacity: 1;
+      visibility: visible;
+      -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      -o-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+
+    .dropdown_box.dropdown_right .dropdown{
+      left: auto;
+      right: 0;
+    }
+
+    .dropdown li:not(:last-child){
+      border: 1px solid #22A9BC;
+    }
+    
+    .dropdown li a{
+      display: block;
+      position: relative;
+      font-size: 14px;
+      line-height: 16px;
+      color: #fff;
+      padding: 11px 5px 11px 35px;
+    }
+
+    .dropdown li a:hover{
+      background-color: #72d3dc;
+    }
+
+    .dropdown li:not(:first-child) a:before{
+      content: '';
+      display: block;
+      position: absolute;
+      height: 1px;
+      right: 0;
+      left: 0;
+      top: 0;
+      background-color: rgba(255,255,255,0.3);
+    }
 
 /* ------------------------------------------------
 
