@@ -382,10 +382,10 @@
     .btn_box{
       line-height: 0;
       font-size: 0;
-      margin-bottom: 12px;
+      padding-top: 30px;
     }
 
-    .btn_box>*:not(:last-child){
+    .btn_box>*:not(:first-child){
       margin-left: 5px;
     }
 
