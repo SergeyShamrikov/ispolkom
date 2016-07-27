@@ -10,7 +10,8 @@
 
 			self.tableToggle();
 			self.dropdown();
-
+			self.addFormInfo.init();
+			self.fileInput();
 		},
 
 		windowLoad: function(){
@@ -76,6 +77,102 @@
 			});
 
 		},
+
+
+		/**
+		**	Form button add clone input
+		**/
+
+		addFormInfo: {
+
+			init: function(){
+
+				var self = this;
+
+				self.templateContactPerson = '<div class="added_fields"><div class="form_row"><div class="label_col_1"><label>ФИО контактого лица</label></div><div class="input_box5"><input type="text"></div></div><div class="form_row"><div class="label_col_1"><label>Должность</label></div><div class="input_box5"><input type="text"></div></div><div class="form_row"><div class="label_col_1"><label>Телефон</label></div><div class="input_box5"><input type="tel"></div></div><div class="form_row"><div class="label_col_1"><label>E-mail</label></div><div class="input_box5"><input type="email"></div></div><div class="form_row"><div class="label_col_1"><label>Адрес</label></div><div class="input_box5"><input type="text"></div></div></div>';
+
+                self.templateContactParameter ='<div class="form_row"><div class="label_col_1"><label>Параметр</label></div><div class="input_box6 align_center"><div class="input_box6_inner alignleft"><input type="text"></div><div class="input_box6_inner alignright"><label>Единица</label><input type="text"></div><div class="input_box6_inner"><label>Значение</label><input type="text"></div></div><button class="close_btn" type="button"><i class="ti-close"></i></button></div>';
+                
+                self.templates = [self.templateContactPerson, self.templateContactParameter];
+
+                self.event();
+
+			},
+
+			event: function(){
+
+				var self = this;
+
+				$('.add_form_btn').on('click',function(){
+					 
+					var parent = $(this).closest('fieldset').find('.form_template'),
+					 	tamplate = parent.attr('data-template');
+
+					self.addFields(tamplate, parent);
+
+				});
+
+				$('body').on("click", '.close_btn', function(){
+
+					var parent = $(this).parent(); 
+					self.removeInfo(parent);
+				});
+				
+			},
+
+			addFields: function(idTempl, parent){
+
+				var self = this;
+
+				parent.append(self.templates[idTempl-1]);
+
+			},
+
+			removeInfo: function(parent){
+
+				var self = this;
+
+				parent.animate({
+					'opacity': 0
+				},500,function(){
+					parent.slideUp(500, function(){
+						parent.remove();
+					});
+				});
+
+			},
+
+		},
+
+
+
+		/**
+		**	File input
+		**/
+
+		fileInput: function(){
+
+			$('.files_btn').on('click', function(){
+
+				var $this = $(this),
+					input = $this.parent().find('input[type="file"]');
+
+				input.trigger('click');
+			
+			});
+
+			$('input[type="file"]').on('change',function(){
+
+				var $this = $(this),
+					nameFileBox = $this.parent().find('.name_file'),
+					nameFile = $this.val();
+
+				nameFileBox.text(nameFile);
+	
+			});
+		
+		},
+
 
 	}
 

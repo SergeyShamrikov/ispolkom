@@ -164,6 +164,18 @@
     text-align: center;
    }
 
+   .align_justify{
+    text-align: justify;
+    font-size: 0;
+    line-height: 0;
+   }
+
+   .align_justify:after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+   }
+
    .alignleft{
     float: left;
    }
@@ -262,6 +274,7 @@
     }
 
     h2{font-size: 30px;}
+    
     h3{font-size: 22px;}
     h4{font-size: 18px;}
     h5{font-size: 16px;}
@@ -333,18 +346,259 @@
     .btn{
       display: inline-block;
       outline: none;
-      background: #;
-      color: #;
+      border: none;
+      font-size: 14px;
+      line-height: 18px;
+      padding: 10px 15px;
+      color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
     }
 
-    .btn:hover{
-      background-color: #;
-      color: #;
+    .btn.rgeen{
+      background-color: #22C664;
     }
+
+    .btn.rgeen:hover{
+      background-color: #58DD8E;
+    }
+
+    .btn.black{
+      background-color: #3E3E47;
+    }
+
+    .btn.black:hover{
+      background-color: #55555E;
+    }
+
+    .btn.blue{
+      background-color: #16B6C6;
+    }
+
+    .btn.blue:hover{
+      background-color: #72d3dc;
+    }
+
+    .btn_box{
+      line-height: 0;
+      font-size: 0;
+      margin-bottom: 12px;
+    }
+
+    .btn_box>*:not(:last-child){
+      margin-left: 5px;
+    }
+
+    .btn_box.alignright>*:not(:last-child){
+      margin-right: 5px;
+      margin-left: 0;
+    }
+
+    .icon_left_btn{
+      position: relative;
+      padding-left: 30px;
+    }
+
+    .icon_left_btn i{
+      text-align: center;
+      display: block;
+      width: 30px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin-top: -8px;
+      font-size: 16px;
+      line-height: 1;
+    }
+
 
   /* --------------------------------------------
         4.4. Forms
   -------------------------------------------- */
+
+    legend{
+      display: block;
+      margin-bottom: 15px;
+      font-size: 18px;
+      line-height: 20px;
+      color: #000;
+    }
+
+    fieldset:not(:last-child){
+      margin-bottom: 30px;
+    }
+
+    .form_row{
+      position: relative;
+    }
+
+    .form_row:not(:last-child){
+      margin-bottom: 8px;
+    }
+
+    .form_row.button_row{
+      padding-top: 20px;
+    }
+
+    .form_row.button_row:not(:last-child){
+      margin-bottom: 25px;
+    }
+
+    .form_row:after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    input:not([type="radio"]):not([type="checkbox"]):not([type="file"]),
+    textarea{
+      width: 100%;
+      outline: none;
+      background-color: #f4f4f4;
+      border: 1px solid #e6e6e6;
+      border-radius: 4px;
+      font-size: 14px;
+      line-height: 20px;
+      padding: 10px;
+    }
+
+    textarea{
+      resize: none;
+    }
+
+    input:not([type="radio"]):not([type="checkbox"]):not([type="file"]):focus,
+    textarea:focus{
+      -webkit-box-shadow: inset 0 0 6px rgba(22,182,198,0.3);
+      box-shadow: inset 0 0 6px rgba(22,182,198,0.3);
+    }
+
+    label{
+      display: block;
+      font-size: 14px;
+      line-height: 16px;
+      padding-top: 13px;
+      color: #000;
+    }
+    
+    [class*='label_col_']{
+      float: left;
+      min-height: 1px;
+    }
+
+    .label_col_1{
+      width: 160px;
+    }
+
+    .label_col_2{
+      width: 130px;
+    }
+
+    .input_box1{
+      float: left;
+      width: 535px;
+    }
+
+    .input_box2{
+      float: left;
+      width: 215px;
+    }
+
+    .input_box3{
+      float: right;
+      width: 255px;
+    }
+
+    .input_box4{
+      float: right;
+      width: 125px;
+    }
+
+    .input_box5{
+      float: left;
+      width: 345px;
+    }
+
+    .input_box6{
+      float: left;
+      width: 720px;
+    }
+
+    .input_box6_inner label{
+      display: inline-block;
+      padding-right: 15px;
+      max-width: 100px;
+    }
+
+    .input_box6_inner input:not([type="radio"]):not([type="checkbox"]):not([type="file"]){
+      display: inline-block;
+      width: 170px;
+    }
+
+    /*select*/
+    
+    .jq-selectbox{
+      width: 100%;
+    }
+
+    .jq-selectbox.focused .jq-selectbox__select{
+      border-color: #e6e6e6;
+    }
+
+    .jq-selectbox__select{
+      width: 100%;
+      height: auto;
+      outline: none !important;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      text-shadow: none;
+      background: #f4f4f4;
+      border: 1px solid #e6e6e6;
+      border-radius: 4px;
+      font-size: 14px;
+      line-height: 20px;
+      padding: 10px;
+    }
+
+    .jq-selectbox__select:hover{
+      background: #f4f4f4;
+    }
+
+    .jq-selectbox__trigger{
+      border: none;
+    }
+
+    .jq-selectbox__trigger-arrow{
+      border: none;
+      width: auto;
+      height: auto;
+      top: 9px;
+    }
+
+    .jq-selectbox__trigger-arrow:before{
+      content: "\f107";
+      font: normal normal normal 22px/1 FontAwesome;
+    }
+
+    .jq-selectbox.opened .jq-selectbox__trigger-arrow:before{
+      content: "\f106";
+    }
+
+    /*input file*/
+
+    input[type="file"]{
+      display: none;
+    }
+
+    .name_file{
+      display: inline-block;
+      padding-left: 10px;
+      line-height: 38px;
+      max-width: 100px;
+      overflow: hidden;
+      -ms-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
 
     
   /* --------------------------------------------
@@ -754,7 +1008,7 @@
 ------------------------------------------------ */
   
   /* --------------------------------------------
-        5.1. Box 1
+        5.1. Boxs
   -------------------------------------------- */
 
     .box1{
@@ -762,6 +1016,12 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.2);
       padding-bottom: 15px;
       min-height: 480px;
+    }
+
+    .box2{
+      -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      padding: 20px 20px 70px;
     }
 
 
@@ -890,11 +1150,11 @@
         5.5. Dropdown
   -------------------------------------------- */
     
-    .dropdown_box{
+    .custom_dropdown_box{
       position: relative;
     }
 
-    .dropdown_btn{
+    .custom_dropdown_btn{
       position: relative;
       display: inline-block;
       font-size: 14px;
@@ -909,25 +1169,25 @@
       transition: all 0.5s;
     }
 
-    .dropdown_btn:hover{
+    .custom_dropdown_btn:hover{
       background-color: #72d3dc;
       -webkit-transition: all 0.3s;
       -o-transition: all 0.3s;
       transition: all 0.3s;
     }
 
-    .dropdown_btn i{
+    .custom_dropdown_btn i{
       line-height: 18px;
       margin-right: 12px;
     }
 
-    .dropdown_btn i:last-child{
+    .custom_dropdown_btn i:last-child{
       margin-right: 0;
       margin-left: 12px;
       font-size: 12px;
     }
 
-    .dropdown{
+    .custom_dropdown{
       position: absolute;
       z-index: 3;
       width: 230px;
@@ -948,7 +1208,7 @@
       transition: all 0.3s;
     }
 
-    .dropdown_box.opened .dropdown{
+    .custom_dropdown_box.opened .dropdown{
       opacity: 1;
       visibility: visible;
       -webkit-transform: translate(0, 0);
@@ -957,16 +1217,16 @@
       transform: translate(0, 0);
     }
 
-    .dropdown_box.dropdown_right .dropdown{
+    .custom_dropdown_box.custom_dropdown_right .dropdown{
       left: auto;
       right: 0;
     }
 
-    .dropdown li:not(:last-child){
+    .custom_dropdown li:not(:last-child){
       border: 1px solid #22A9BC;
     }
     
-    .dropdown li a{
+    .custom_dropdown li a{
       display: block;
       position: relative;
       font-size: 14px;
@@ -975,11 +1235,11 @@
       padding: 11px 5px 11px 35px;
     }
 
-    .dropdown li a:hover{
+    .custom_dropdown li a:hover{
       background-color: #72d3dc;
     }
 
-    .dropdown li:not(:first-child) a:before{
+    .custom_dropdown li:not(:first-child) a:before{
       content: '';
       display: block;
       position: absolute;
@@ -999,6 +1259,7 @@
   #header{
     height: 115px;
     position: absolute;
+    z-index: 1;
     top: 0;
     left: 0;
     right: 0;
@@ -1016,6 +1277,7 @@
     margin-left: 66px;
     -webkit-box-shadow: 0 3px 10px rgba(0,0,0,0.2);
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+
   }
 
 
@@ -1170,7 +1432,7 @@
     z-index: 2;
     width: 100%;
     font-size: 24px;
-    line-height: 66px;
+    line-height: 64px;
   }
 
   #left_menu li a span{
@@ -1181,7 +1443,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    padding-left: 66px;
+    padding-left: 64px;
     padding-right: 40px;
     -webkit-transform: translate(-100%, 0);
     -ms-transform: translate(-100%, 0);
@@ -1206,3 +1468,108 @@
   #left_menu li.current a span{
     background-color: #72d3dc;
   }
+
+/* ------------------------------------------------
+
+    8. New Project page
+
+------------------------------------------------ */
+   
+  .form_block1{
+    float: left;
+    width: 880px;
+  }
+
+  .form_block2{
+    clear: both;
+    width: 880px;
+  }
+
+  .added_fields{
+    padding-top: 15px;
+  }
+
+  .upload_photo{
+    float: right;
+    width: 242px;
+    padding-top: 35px;
+    text-align: center;
+  }
+
+  .upload_photo_img{
+    height: 180px;
+    position: relative;
+    border: 1px solid #e6e6e6;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+
+  .upload_photo_img i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 30px;
+    color: #858C95;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .upload_photo_img .name_file{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+    padding: 0;
+    font-size: 14px;
+    line-height: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+  .upload_photo_img:hover .name_file{
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .close_btn{
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #ccc;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .close_btn i{
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  .close_btn:hover{
+    background-color: #D15656;
+  }
+
+  .form_row .close_btn{
+    position: absolute;
+    top: 50%;
+    margin-top: -12px;
+    right: -40px;
+  }
+  
