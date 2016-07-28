@@ -46,14 +46,14 @@
 
 		dropdown: function(){
 
-			$('.dropdown_btn').on('click',function(){
-				$(this).closest('.dropdown_box').toggleClass('opened');
+			$('.custom_dropdown_btn').on('click',function(){
+				$(this).closest('.custom_dropdown_box').toggleClass('opened');
 			});
 
 			$(document).on('click', function(e){
 
-				if(!$(e.target).closest('.dropdown_box').length){
-					$('.dropdown_box').removeClass('opened');
+				if(!$(e.target).closest('.custom_dropdown_box').length){
+					$('.custom_dropdown_box').removeClass('opened');
 				}
 
 			});
