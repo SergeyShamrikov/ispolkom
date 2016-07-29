@@ -1505,6 +1505,10 @@
     text-align: center;
   }
 
+  .upload_photo_inner:not(:last-child){
+    margin-bottom: 15px;
+  }
+
   .upload_photo_img{
     height: 180px;
     position: relative;
@@ -1552,6 +1556,12 @@
   .upload_photo_img:hover .name_file{
     opacity: 1;
     visibility: visible;
+  }
+
+  .upload_photo .input_file_box .name_file{
+    display: block;
+    padding: 0;
+    max-width: initial;
   }
 
   .close_btn{
