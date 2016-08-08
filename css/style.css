@@ -1084,7 +1084,6 @@
   -------------------------------------------- */
     
     .navigation_1{
-      border-bottom: 1px solid #e6e6e6;
       background-color: #f4f4f4;
     }
 
@@ -1116,7 +1115,8 @@
   -------------------------------------------- */
     
     .filter_box1{
-      margin: 17px 0 15px 17px;
+      padding: 17px 0 15px 17px;
+      border-top: 1px solid #e6e6e6;
     }
 
     .filter_box2{
