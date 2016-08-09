@@ -37,7 +37,7 @@
 @import "../fonts/font-awesome-4.6.3/css/font-awesome.min.css";
 @import "../fonts/themify-icons/themify-icons.css";
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic);
 
 /* ------------------------------------------------
 
@@ -251,6 +251,10 @@
          padding: 55px 0;
       }
 
+      .section_offset1{
+         padding: 0 0 40px;
+      }
+
 /* ------------------------------------------------
 
     4. Basic Elements
@@ -275,9 +279,22 @@
 
     h2{font-size: 30px;}
     
-    h3{font-size: 22px;}
-    h4{font-size: 18px;}
+    h3{
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 20px;
+      margin-bottom: 15px;
+    }
+
+    h4{
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 10px;
+    }
+
     h5{font-size: 16px;}
+    
     h6{font-size: 14px;}
 
     p:not(:last-child){margin-bottom: 20px;}
@@ -286,7 +303,7 @@
     mark.red{background-color: #ee352f;}
 
     a{
-      color: #;
+      color: #69a6ac;
       text-decoration: none;
       -webkit-transition: all 0.5s;
       -o-transition: all 0.5s;
@@ -314,18 +331,39 @@
       text-decoration: none;
     }
 
+    .img_box img{
+      width: 100%;
+    }
+
+    .img_box:not(:last-child){
+      margin-bottom: 10px;
+    }
+
   /* --------------------------------------------
         4.2. Lists
   -------------------------------------------- */
-      
-    .list1{}
     
-    .list1 li{
-      background:url(../images/marker1.png) 0 7px no-repeat;
-      padding-left:20px;
+    dl:not(:last-child){
+      margin-bottom: 15px;
     }
 
-    .list1 li a{}
+    dt{
+      float: left;
+      margin-right: 10px;
+      padding-top: 10px;
+    }
+
+    dd{
+      padding-top: 10px;
+      overflow: hidden;
+      text-align: right;
+    }
+
+    .date_list{
+      color: #989696;
+      font-size: 12px;
+      line-height: 20px;
+    }
 
   /* --------------------------------------------
         4.3. Buttons
@@ -353,6 +391,15 @@
       color: #fff;
       border-radius: 4px;
       cursor: pointer;
+      text-align: center;
+    }
+
+    .btn.full_width{
+      width: 100%;
+    }
+
+    .btn:hover{
+      color: #fff;
     }
 
     .btn.rgeen{
@@ -1054,6 +1101,14 @@
   /* --------------------------------------------
         4.7. Dividers
   -------------------------------------------- */
+    
+    .divider{
+      border: none;
+      margin: 0 0 15px;
+      width: 100%;
+      height: 1px;
+      background-color: #e8e8e8;
+    }
 
 /* ------------------------------------------------
 
@@ -1401,6 +1456,21 @@
       line-height: 65px;
       color: #3E3E47;
       padding: 0 25px;
+    }
+
+    #top_menu li a span{
+      display: inline-block;
+      vertical-align: middle;
+      min-width: 20px;
+      height: 20px;
+      border-radius: 10px;
+      background-color: #16B6C6;
+      font-size: 12px;
+      line-height: 20px;
+      color: #fff;
+      text-align: center;
+      padding: 0 3px;
+      margin-left: 10px;
     }
 
     #top_menu li a:hover,
@@ -1752,3 +1822,58 @@
   }
 
 
+
+/* ------------------------------------------------
+
+    10. Card Project Page
+
+------------------------------------------------ */
+  
+  .card_project_box{
+    padding: 50px;
+  }
+
+  .row{
+    margin: 0 -15px;
+  }
+
+  .row:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  [class*='col-']{
+    float: left;
+    margin: 0 15px;
+  }
+
+  .col-230{
+    width: 230px;
+  }
+
+  .col-135{
+    width: 135px;
+  }
+
+  .col-310{
+    width: 310px;
+  }
+
+  .project_completed{
+    font-size: 58px;
+    line-height: 1;
+    color: #686868;
+    text-align: center;
+  }
+
+  .project_completed:not(:last-child){
+    margin-bottom: 30px;
+  }
+
+  .project_completed span{
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    color: #7f7f7f;
+  }
