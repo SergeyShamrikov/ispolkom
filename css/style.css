@@ -503,7 +503,7 @@
       color: #3e3e47;
     }
 
-    .btn.grey:hover{
+    .btn.grey:not(.label):hover{
       background-color: #16B6C6;
       background-color: #16B6C6;
       color: #fff;
