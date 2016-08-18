@@ -305,6 +305,15 @@
     
     h6{font-size: 14px;}
 
+    .title1{
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 400;
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-bottom: 1px solid #e6e6e6;
+    }
+
     p:not(:last-child){margin-bottom: 20px;}
 
     mark{background-color: #20cfef;padding: 0 2px;color: #fff;}
@@ -446,7 +455,7 @@
       border: none;
       font-size: 14px;
       line-height: 18px;
-      padding: 10px 15px;
+      padding: 11px 15px;
       color: #fff;
       border-radius: 4px;
       cursor: pointer;
@@ -492,6 +501,16 @@
     .btn.grey{
       background-color: #ededed;
       color: #3e3e47;
+    }
+
+    .btn.grey:hover{
+      background-color: #16B6C6;
+      background-color: #16B6C6;
+      color: #fff;
+    }
+
+    .btn.grey.border{
+      border: 1px solid #e6e6e6;
     }
 
     .btn_box{
@@ -703,20 +722,46 @@
     }
 
     /*input file*/
+    
+    .input_file_box{
+      position: relative;
+      padding-right: 20px;
+    }
 
     input[type="file"]{
       display: none;
     }
 
     .name_file{
-      display: inline-block;
-      padding-left: 10px;
-      line-height: 38px;
-      max-width: 100px;
+      display: block;
+      font-size: 16px;
+      line-height: 20px;
+      max-width: 100%;
+      padding: 20px 0 0;
       overflow: hidden;
       -ms-text-overflow: ellipsis;
       text-overflow: ellipsis;
       white-space: nowrap;
+    }
+
+    .clear_file{
+      position: absolute;
+      right: 0;
+      top: 58px;
+      font-size: 20px;
+      line-height: 1;
+      color: #000;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .clear_file:hover{
+      color: #D15656;
+    }
+
+    .input_file_box.selected .clear_file{
+      opacity: 1;
+      visibility: visible;
     }
 
 
@@ -777,7 +822,7 @@
         4.5. Tables
   -------------------------------------------- */
     
-    table{
+    table:not(.arcticmodal-container_i){
       width: 100%;
       table-layout: fixed;
       text-align: left;
@@ -1320,7 +1365,49 @@
       right: -20px;
       margin-top: -3px;
     }
-  
+ 
+  /* --------------------------------------------
+        5.5. Modal Windows
+  -------------------------------------------- */
+     
+    .modal_box{
+      background: #fff;
+      width: 670px;
+    }
+
+    .modal_box_inner{
+      padding: 20px 10px;
+    }
+
+    .performance_task{
+      position: relative;
+      float: left;
+      width: 100px;
+      margin-right: 15px;
+    }
+
+    .performance_task:before{
+      content: "%";
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      font-size: 16px;
+      line-height: 20px;
+      color: #000;
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      -o-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+    }
+
+    .performance_task input:not([type="radio"]):not([type="checkbox"]):not([type="file"]){
+      padding-right: 25px;
+    }
+
+    .file_name_box{
+      display: inline-block;
+      width: 230px;
+    }
 
   /* --------------------------------------------
         5.5. Dropdown
@@ -1763,9 +1850,12 @@
     visibility: visible;
   }
 
+  .upload_photo .input_file_box{
+    padding-left: 20px;
+  }
+
   .upload_photo .input_file_box .name_file{
     display: block;
-    padding: 0;
     max-width: initial;
   }
 
@@ -1950,6 +2040,10 @@
 
   .col-50{
     width: 50%;
+  }
+
+  .col-3{
+    width: 33.3333%;
   }
 
   .project_completed{

@@ -167,8 +167,28 @@
 					nameFileBox = $this.parent().find('.name_file'),
 					nameFile = $this.val();
 
-				nameFileBox.text(nameFile);
+				if(nameFile != ''){
+
+					nameFileBox.text(nameFile).css('display', 'block');
+					$this.parent().addClass('selected');
+				}
+				else{
+
+					nameFileBox.text(nameFile).css('display', 'none');
+					$this.parent().removeClass('selected');
+						
+				}
 	
+			});
+
+			$('.clear_file').on('click', function(){
+
+				var $this = $(this),
+					nameFileBox = $this.parent().find('.name_file');
+
+				$this.parent().removeClass('selected').find('input').val('');
+				nameFileBox.text('').css('display', 'none');
+
 			});
 		
 		},
