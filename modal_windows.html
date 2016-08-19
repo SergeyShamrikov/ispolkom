@@ -19,6 +19,7 @@
         <!-- Libs CSS
         ============================================ -->
         <link rel="stylesheet" href="plugins/jquery.arcticmodal-0.3/jquery.arcticmodal-0.3.css">
+        <link rel="stylesheet" href="plugins/FormStyler/jquery.formstyler.css">
 
         
 
@@ -281,13 +282,155 @@
                     <h4 class="title1">Создание новой задачи</h4>
                     
                     <div class="modal_box_inner">
-                        <fieldset></fieldset>
+                        <fieldset>
+                            
+                            <div class="form_row">     
+                                
+                                <label class="title_label">Название задачи*</label>
+                                <input type="text">
+                                
+                            </div>
+
+                            <div class="form_box_bg">
+
+                                <div class="form_row">
+                                        
+                                    <select data-placeholder='Выберите проект'>
+                                        <option value=""></option>
+                                        <option value="Заказчик 1">Заказчик 1</option>
+                                        <option value="Заказчик 2">Заказчик 2</option>
+                                        <option value="Заказчик 3">Заказчик 3</option>
+                                        <option value="Заказчик 4">Заказчик 4</option>
+                                    </select>
+
+                                </div>
+
+                                <div class="form_row">
+                                        
+                                    <div class="w50pr">
+                                        <select data-placeholder='Выберите этап проекта'>
+                                            <option value=""></option>
+                                            <option value="Заказчик 1">Заказчик 1</option>
+                                            <option value="Заказчик 2">Заказчик 2</option>
+                                            <option value="Заказчик 3">Заказчик 3</option>
+                                            <option value="Заказчик 4">Заказчик 4</option>
+                                        </select>
+                                    </div>
+                                    <div class="w50pr">
+                                        <select data-placeholder='Выберите раздел проекта'>
+                                            <option value=""></option>
+                                            <option value="Заказчик 1">Заказчик 1</option>
+                                            <option value="Заказчик 2">Заказчик 2</option>
+                                            <option value="Заказчик 3">Заказчик 3</option>
+                                            <option value="Заказчик 4">Заказчик 4</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                                <div class="form_row">
+                                        
+                                    <select data-placeholder='Выберите подраздел проекта'>
+                                        <option value=""></option>
+                                        <option value="Заказчик 1">Заказчик 1</option>
+                                        <option value="Заказчик 2">Заказчик 2</option>
+                                        <option value="Заказчик 3">Заказчик 3</option>
+                                        <option value="Заказчик 4">Заказчик 4</option>
+                                    </select>
+
+                                </div>
+
+                                <div class="form_row">
+                                        
+                                    <select data-placeholder='Выберите группу задач'>
+                                        <option value=""></option>
+                                        <option value="Заказчик 1">Заказчик 1</option>
+                                        <option value="Заказчик 2">Заказчик 2</option>
+                                        <option value="Заказчик 3">Заказчик 3</option>
+                                        <option value="Заказчик 4">Заказчик 4</option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <div class="form_row">
+
+                                <label class="title_label">Исполнитель</label>
+
+                                <div class="w60pr">
+                                    <select data-placeholder='&nbsp;'>
+                                        <option value=""></option>
+                                        <option value="Заказчик 1">Заказчик 1</option>
+                                        <option value="Заказчик 2">Заказчик 2</option>
+                                        <option value="Заказчик 3">Заказчик 3</option>
+                                        <option value="Заказчик 4">Заказчик 4</option>
+                                    </select>
+                                </div>
+
+                                <div class="w40pr">
+                                    <div class="performance_task">
+                                        <input type="text" value="0">
+                                    </div>
+                                                        
+                                    <label class="title_label two_line_text">От раздела «АР» <br> <spen class="text_green">(Допустимо 90%)</spen></label>
+                                </div>
+
+                            </div>
+
+                        </fieldset>
                     </div>
 
                     <h4 class="title1">Сроки задачи</h4>
                     
                     <div class="modal_box_inner">
-                        <fieldset></fieldset>
+                        <fieldset>
+                            
+                            <div class="form_row">
+
+                                <div class="w50pr">
+                                    <label class="sm_label">Дата начала</label>
+                                    <div class="w100px">
+                                        <input type="text">
+                                    </div>
+                                </div>
+
+                                <div class="w50pr">
+                                    <label class="md_label">Продолжительность</label>
+                                    <div class="w100px">
+                                        <input type="text">
+                                    </div>
+                                    <label class="align_right">дней</label>
+                                </div>
+                                        
+                            </div>
+
+                            <div class="form_row">
+
+                                <div class="w50pr">
+                                    <label class="sm_label">Дата окончания</label>
+                                    <div class="w100px">
+                                        <input type="text">
+                                    </div>
+                                </div>
+
+                                <div class="w50pr">
+                                    <label class="md_label">Приоритет</label>
+                                    <div class="w100px">
+                                        <select data-placeholder='&nbsp;'>
+                                            <option value=""></option>
+                                            <option value="Заказчик 1">Заказчик 1</option>
+                                            <option value="Заказчик 2">Заказчик 2</option>
+                                            <option value="Заказчик 3">Заказчик 3</option>
+                                            <option value="Заказчик 4">Заказчик 4</option>
+                                        </select>
+                                    </div>
+                                    
+                                </div>
+                                        
+                            </div>
+
+                        </fieldset>
                     </div>
 
                     <h4 class="title1">Документы</h4>
@@ -344,6 +487,8 @@
         ============================================ -->
         <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="plugins/jquery.arcticmodal-0.3/jquery.arcticmodal-0.3.min.js"></script>
+        <script type="text/javascript" src="plugins/FormStyler/jquery.formstyler.min.js"></script>
+
 
         <!-- Theme files
         ============================================ -->
