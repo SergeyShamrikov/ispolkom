@@ -92,8 +92,10 @@
 				self.templateContactPerson = '<div class="added_fields remove_box"><div class="form_row"><div class="label_col_1"><label>ФИО контактого лица</label></div><div class="input_box5 p_rel"><input type="text"><button class="close_btn" type="button"><i class="ti-close"></i></button></div></div><div class="form_row"><div class="label_col_1"><label>Должность</label></div><div class="input_box5"><input type="text"></div></div><div class="form_row"><div class="label_col_1"><label>Телефон</label></div><div class="input_box5"><input type="tel"></div></div><div class="form_row"><div class="label_col_1"><label>E-mail</label></div><div class="input_box5"><input type="email"></div></div><div class="form_row"><div class="label_col_1"><label>Адрес</label></div><div class="input_box5"><input type="text"></div></div></div>';
 
                 self.templateContactParameter ='<div class="form_row remove_box"><div class="label_col_1"><label>Параметр</label></div><div class="input_box6 align_center"><div class="input_box6_inner alignleft"><input type="text"></div><div class="input_box6_inner alignright"><label>Единица</label><input type="text"></div><div class="input_box6_inner"><label>Значение</label><input type="text"></div></div><button class="close_btn" type="button"><i class="ti-close"></i></button></div>';
+
+                self.templateAddFile ='<div class="form_row remove_box"><h6 class="name_load_file">Название файла</h6><a href="javascript:;" class="close_btn type1"><i class="ti-close"></i></a><div class="align_justify"><div class="file_name_box"><input type="text" placeholder="Имя"></div> <button type="button" class="btn grey border">Загрузить исходный файл</button> <button type="button" class="btn grey border">Загрузить PDF файл</button></div></div>';
                 
-                self.templates = [self.templateContactPerson, self.templateContactParameter];
+                self.templates = [self.templateContactPerson, self.templateContactParameter, self.templateAddFile];
 
                 self.event();
 
