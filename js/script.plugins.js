@@ -26,10 +26,13 @@
 				arcticmodal
 		------------------------------------------------ */
 
-			if($('#modal1').length){
+			$('[data-modal]').on('click', function(){
 
-				$('#modal1').arcticmodal();
-			}
+				var modal = $(this).attr('data-modal');
+
+				$(modal).arcticmodal();
+
+			});
 
         /* ------------------------------------------------
 				End of arcticmodal
