@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <!-- Basic page needs
+        ============================================ -->
+        <title>Tasks page</title>
+        <meta charset="utf-8">
+        <meta name="author" content="">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+
+        <!-- Mobile specific metas
+        ============================================ -->
+        <meta name="viewport" content="width=1280">
+
+
+        <!-- Libs CSS
+        ============================================ -->
+        <link rel="stylesheet" href="plugins/jquery.arcticmodal-0.3/jquery.arcticmodal-0.3.css">
+        <link rel="stylesheet" href="plugins/FormStyler/jquery.formstyler.css">
+
+        
+
+        <!-- Favicon
+        ============================================ -->
+        <!-- <link rel="shortcut icon" type="images/x-icon" href="images/fav_icon.ico"> -->
+
+        <!-- Theme CSS
+        ============================================ -->
+        <!-- <link rel="stylesheet" href="css/se.css"> -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Media Queries CSS
+        ============================================ -->
+        <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+
+        <!-- Old IE 
+        ============================================ -->
+
+        <!--[if lt IE 8]>
+        <div style=' clear: both; text-align:center; position: relative;'>
+          <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+            <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+          </a>
+        </div>
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/html5.js"></script>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+        <![endif]-->
+
+
+    </head>
+
+    <body>
+
+        <div class="page_wrap">
+
+            <!-- - - - - - - - - - - - - - Header - - - - - - - - - - - - - - - - -->
+            
+            <header id="header">
+                
+                <div class="header_top clearfix">
+                
+                    <!-- - - - - - - - - - - - - - Logo - - - - - - - - - - - - - - - - -->
+                
+                    <div class="logo" role="banner">
+                        <i class="fa fa-list-ul"></i>
+                        <span>Проекты</span>
+                    </div>
+                     
+                    <!-- - - - - - - - - - - - - - End of Logo - - - - - - - - - - - - - - - - -->
+    
+                    <!-- - - - - - - - - - - - - - Logo - - - - - - - - - - - - - - - - -->
+                
+                    <div class="registered_name">
+                        <span>Богомолов Р.С.</span>
+                        <a href="javascript:;" class="out_btn"><i class="fa fa-power-off"></i></a>
+                    </div>
+                     
+                    <!-- - - - - - - - - - - - - - End of Logo - - - - - - - - - - - - - - - - -->
+                    
+                </div>
+
+                <div class="header_bottom clearfix">
+                    
+                    <ul id="top_menu" class="clearfix">
+                        <li><a href="javascript:;">Проекты</a></li>
+                        <li class="current"><a href="javascript:;">Задачи</a></li>
+                        <li><a href="javascript:;">Поручения</a></li>
+                        <li><a href="javascript:;">Документы</a></li>
+                        <li><a href="javascript:;">Календарь</a></li>
+                    </ul>
+
+                    <div class="custom_dropdown_box alignright custom_dropdown_right">
+                        
+                        <div class="custom_dropdown_btn"><i class="fa fa-plus"></i>Новое поручение<i class="fa fa-chevron-down"></i></div>
+
+                        <ul class="custom_dropdown">
+                            
+                            <li>
+                                <a href="javascript:;"><img src="images/icon_1.png" alt="" class="custom_dropdown_icon">Создать проект</a>
+                            </li>
+                        
+                            <li>
+                                <a href="javascript:;"><img src="images/icon_2.png" alt="" class="custom_dropdown_icon">Создать подраздел проекта</a>
+                            </li>
+                        
+                            <li>
+                                <a href="javascript:;"><img src="images/icon_3.png" alt="" class="custom_dropdown_icon">Создать группу задач</a>
+                            </li>
+                        
+                            <li>
+                                <a href="javascript:;"><img src="images/icon_4.png" alt="" class="custom_dropdown_icon">Создать задачу</a>
+                            </li>
+                        
+                            <li>
+                                <a href="javascript:;"><img src="images/icon_5.png" alt="" class="custom_dropdown_icon">Создать задание смежному отделу</a>
+                            </li>
+                        
+                        </ul>
+
+                    </div>
+
+                    <a href="javascript:;" class="notice">
+                        <span>Уведомления</span>
+                        <span class="notice_qt">1</span>
+                    </a>
+
+                </div>
+
+            </header>
+             
+            <!-- - - - - - - - - - - - - - Left Menu - - - - - - - - - - - - - - - - -->
+        
+            <ul id="left_menu">
+    
+                <li><a href="javascript:;"><i class="fa fa-line-chart"></i><span>Пункт 1</span></a></li>
+                <li class="current"><a href="javascript:;"><i class="fa fa-list-ul"></i><span>Пункт 2</span></a></li>
+                <li><a href="javascript:;"><i class="fa fa-suitcase"></i><span>Пункт 3</span></a></li>
+                <li><a href="javascript:;"><i class="fa fa-cog"></i><span>Настройки</span></a></li>
+    
+            </ul>
+    
+            <!-- - - - - - - - - - - - - - End of Left Menu - - - - - - - - - - - - - - - - -->
+        
+            
+            <!-- - - - - - - - - - - - - - End of Header - - - - - - - - - - - - - - - - -->
+            
+            <!-- - - - - - - - - - - - - - Content - - - - - - - - - - - - - - - - -->
+            
+            <main id="content">
+
+                <!-- <h1>Проект № 1</h1> -->
+                <div class="way">
+                    <a href="">проект</a>   <span>></span>    дом 42
+                </div>
+
+                <div class="clearfix">
+
+                    <div class="work_box_right">
+                        <div class="line_title">
+                            в работе
+                        </div>
+                        <div class="work_box_cont">
+                            
+                            <table class="work_box_table">
+                                <tbody>
+                                    <tr>
+                                        <td>Дата начала:</td>
+                                        <td>24.10.2016</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Дата завершения:</td>
+                                        <td>25.10.2016</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Стадия:</td>
+                                        <td>П</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Раздел проекта:</td>
+                                        <td>ПЗ</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="line_cont"></div>
+
+                            <div class="work_people">
+                                <p>Постановщик:</p>
+                                <div class="work_people_ava">
+                                    <img src="images/ava_work_people_1.png" alt="">
+                                </div>
+                                <div class="work_people_cont">
+                                    <p>Мирошник Елена</p>
+                                    <p><span>Начальник отдела</span></p>
+                                </div>
+                            </div>
+
+                            <div class="work_people">
+                                <p>Ответственный:</p>
+                                <div class="work_people_ava">
+                                    <img src="images/ava_work_people_2.png" alt="">
+                                </div>
+                                <div class="work_people_cont">
+                                    <p>Кашфразиева Светлана</p>
+                                    <p><span>Архитектор</span></p>
+                                </div>
+                            </div>
+
+                            <div class="work_people">
+                                <p>Процент выполнения:</p>
+                                <div class="percent_complete">
+                                    <span style="width: 80%;"></span>
+                                    <em>80%</em>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="work_box_left">
+                        <div class="way line_title">
+                            <a href="">ЗАДАЧА</a>   <span>></span>    выполнить коммуникацию по дому 42
+                        </div>
+
+                        <div class="work_box_cont">
+                            <button class="btn_square"><span>Старт</span></button>
+                        </div>
+
+                    </div>
+                    <div class="work_box_left">
+                        <div class="way">
+                            <a href="">ЗАДАЧА</a>   <span>></span>    выполнить коммуникацию по дому 42
+                        </div>
+                        <div class="work_box_cont">
+                            
+                        </div>
+                    </div>
+
+                </div>
+            
+                <!-- <div class="box1 white_bg">
+                    
+                    <div class="btn_box">
+                        
+                        <a href="javascript:;" class="btn blue" data-modal="#modal1">Пауза</a>
+                        <a href="javascript:;" class="btn blue" data-modal="#modal2">Добавление документов</a>
+                        <a href="javascript:;" class="btn blue" data-modal="#modal3">создание задачи</a>
+
+                    </div>
+
+                </div> -->
+
+            </main>
+            
+            <!-- - - - - - - - - - - - - - End of Content - - - - - - - - - - - - - - - - -->
+
+        </div>
+
+        <!-- - - - - - - - - - - - - - Modal Windows - - - - - - - - - - - - - - - - -->
+        
+        <div class="hide">
+            
+            <div id="modal1" class="modal_box">
+                
+                <form>
+                    
+                    <h4 class="title1">Пауза «qq»</h4>
+                    
+                    <div class="modal_box_inner">
+                        
+                        <fieldset>
+                    
+                            <div class="form_row">
+                                
+                                <div class="performance_task">
+                                    <input type="text" value="0">
+                                </div>
+                    
+                                <label class="ove_hid">укажите процент выполнения задачи</label>
+                    
+                            </div>
+                        
+                        </fieldset>
+                    
+                        <fieldset>
+                            
+                            <legend>Описание (если нужно)</legend>
+                    
+                            <div class="form_row">
+                                <textarea rows="8"></textarea>
+                            </div>
+                    
+                        </fieldset>
+                    
+                    </div>
+                    
+                    <h4 class="title1">Документы</h4>
+                    
+                    <div class="modal_box_inner">
+                        
+                        <fieldset>
+                    
+                            <div class="form_row">
+                                <button class="btn icon_left_btn blue add_form_btn" type="button"><i class="ti-plus"></i>Добавить файл</button>
+                            </div>
+                            
+                            <div class="form_row form_template" data-template="3"></div>
+
+                        </fieldset>
+                        
+                        <div class="clearfix">
+                        
+                            <div class="alignright btn_box">
+                                    
+                                <button class="btn rgeen">Сохранить</button>
+                                <button class="btn black" type="reset">Отмена</button>
+                        
+                            </div>
+                        
+                        </div>
+                    
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div id="modal2" class="modal_box">
+                
+                <form>
+                    
+                    <h4 class="title1">Добавление документов</h4>
+                    
+                    <div class="modal_box_inner">
+                        
+                        <fieldset>
+                    
+                            <div class="form_row">
+                                <button class="btn icon_left_btn blue add_form_btn" type="button"><i class="ti-plus"></i>Добавить файл</button>
+                            </div>
+                            
+                            <div class="form_row form_template" data-template="3"></div>
+
+                        </fieldset>
+                        
+                        <div class="clearfix">
+                        
+                            <div class="alignright btn_box">
+                                    
+                                <button class="btn rgeen">Сохранить</button>
+                                <button class="btn black" type="reset">Отмена</button>
+                        
+                            </div>
+                        
+                        </div>
+                    
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div id="modal3" class="modal_box">
+                
+                <form>
+                    
+                    <h4 class="title1">Создание новой задачи</h4>
+                    
+                    <div class="modal_box_inner">
+                        <fieldset>
+                            
+                            <div class="form_row">     
+                                
+                                <label class="title_label">Название задачи*</label>
+                                <input type="text">
+                                
+                            </div>
+
+                            <div class="form_box_bg">
+
+                                <div class="form_row">
+                                        
+                                    <select data-placeholder='Выберите проект'>
+                                        <option value=""></option>
+                                        <option value="Заказчик 1">Заказчик 1</option>
+                                        <option value="Заказчик 2">Заказчик 2</option>
+                                        <option value="Заказчик 3">Заказчик 3</option>
+                                        <option value="Заказчик 4">Заказчик 4</option>
+                                    </select>
+
+                                </div>
+
+                                <div class="form_row">
+                                        
+                                    <div class="w50pr">
+                                        <select data-placeholder='Выберите этап проекта'>
+                                            <option value=""></option>
+                                            <option value="Заказчик 1">Заказчик 1</option>
+                                            <option value="Заказчик 2">Заказчик 2</option>
+                                            <option value="Заказчик 3">Заказчик 3</option>
+                                            <option value="Заказчик 4">Заказчик 4</option>
+                                        </select>
+                                    </div>
+                                    <div class="w50pr">
+                                        <select data-placeholder='Выберите раздел проекта'>
+                                            <option value=""></option>
+                                            <option value="Заказчик 1">Заказчик 1</option>
+                                            <option value="Заказчик 2">Заказчик 2</option>
+                                            <option value="Заказчик 3">Заказчик 3</option>
+                                            <option value="Заказчик 4">Заказчик 4</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                                <div class="form_row">
+                                        
+                                    <select data-placeholder='Выберите подраздел проекта'>
+                                        <option value=""></option>
+                                        <option value="Заказчик 1">Заказчик 1</option>
+                                        <option value="Заказчик 2">Заказчик 2</option>
+                                        <option value="Заказчик 3">Заказчик 3</option>
+                                        <option value="Заказчик 4">Заказчик 4</option>
+                                    </select>
+
+                                </div>
+
+                                <div class="form_row">
+                                        
+                                    <select data-placeholder='Выберите группу задач'>
+                                        <option value=""></option>
+                                        <option value="Заказчик 1">Заказчик 1</option>
+                                        <option value="Заказчик 2">Заказчик 2</option>
+                                        <option value="Заказчик 3">Заказчик 3</option>
+                                        <option value="Заказчик 4">Заказчик 4</option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <div class="form_row">
+
+                                <label class="title_label">Исполнитель</label>
+
+                                <div class="w60pr">
+                                    <select data-placeholder='&nbsp;'>
+                                        <option value=""></option>
+                                        <option value="Заказчик 1">Заказчик 1</option>
+                                        <option value="Заказчик 2">Заказчик 2</option>
+                                        <option value="Заказчик 3">Заказчик 3</option>
+                                        <option value="Заказчик 4">Заказчик 4</option>
+                                    </select>
+                                </div>
+
+                                <div class="w40pr">
+                                    <div class="performance_task">
+                                        <input type="text" value="0">
+                                    </div>
+                                                        
+                                    <label class="title_label two_line_text ove_hid">От раздела «АР» <br> <spen class="text_green">(Допустимо 90%)</spen></label>
+                                </div>
+
+                            </div>
+
+                        </fieldset>
+                    </div>
+
+                    <h4 class="title1">Сроки задачи</h4>
+                    
+                    <div class="modal_box_inner">
+                        <fieldset>
+                            
+                            <div class="form_row">
+
+                                <div class="w50pr">
+                                    <label class="sm_label">Дата начала</label>
+                                    <div class="w100px">
+                                        <input type="text">
+                                    </div>
+                                </div>
+
+                                <div class="w50pr">
+                                    <label class="md_label">Продолжительность</label>
+                                    <div class="w100px">
+                                        <input type="text">
+                                    </div>
+                                    <label class="wrapper pl5">дней</label>
+                                </div>
+                                        
+                            </div>
+
+                            <div class="form_row">
+
+                                <div class="w50pr">
+                                    <label class="sm_label">Дата окончания</label>
+                                    <div class="w100px">
+                                        <input type="text">
+                                    </div>
+                                </div>
+
+                                <div class="w50pr">
+                                    <label class="md_label">Приоритет</label>
+                                    <div class="w100px">
+                                        <select data-placeholder='&nbsp;'>
+                                            <option value=""></option>
+                                            <option value="Заказчик 1">Заказчик 1</option>
+                                            <option value="Заказчик 2">Заказчик 2</option>
+                                            <option value="Заказчик 3">Заказчик 3</option>
+                                            <option value="Заказчик 4">Заказчик 4</option>
+                                        </select>
+                                    </div>
+                                    
+                                </div>
+                                        
+                            </div>
+
+                        </fieldset>
+                    </div>
+
+                    <h4 class="title1">Документы</h4>
+                    
+                    <div class="modal_box_inner">
+                        
+                        <fieldset>
+                    
+                            <div class="form_row">
+                                <button class="btn icon_left_btn blue add_form_btn" type="button"><i class="ti-plus"></i>Добавить файл</button>
+                            </div>
+                            
+                            <div class="form_row form_template" data-template="3"></div>
+
+                        </fieldset>
+                        
+                    </div>
+
+                    <h4 class="title1">Описание задачи</h4>
+                    
+                    <div class="modal_box_inner">
+                        
+                        <fieldset>
+                            <div class="form_row">
+                                <textarea rows="5"></textarea>
+                            </div>
+                        </fieldset>
+
+                        <div class="clearfix">
+                        
+                            <div class="alignright btn_box">
+                                    
+                                <button class="btn rgeen">Сохранить</button>
+                                <button class="btn black" type="reset">Отмена</button>
+                        
+                            </div>
+                        
+                        </div>
+                    
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <!-- - - - - - - - - - - - - - End of Modal Windows - - - - - - - - - - - - - - - - -->
+
+
+
+
+        <!-- Include Libs & Plugins
+        ============================================ -->
+        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="plugins/jquery.arcticmodal-0.3/jquery.arcticmodal-0.3.min.js"></script>
+        <script type="text/javascript" src="plugins/FormStyler/jquery.formstyler.min.js"></script>
+
+
+        <!-- Theme files
+        ============================================ -->
+        <script src="js/script.core.js"></script>
+        <script src="js/script.plugins.js"></script>
+        
+    </body>
+</html>
