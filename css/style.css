@@ -2312,6 +2312,22 @@
     12. task_card page
 
 ------------------------------------------------ */
+
+.text_gray {
+  color: #777777 !important;
+}
+.text_taupe {
+  color: #393939 !important;
+}
+.text_pink {
+  color: #ff4081 !important;
+}
+.text_yellow {
+  color: #f1a80a !important;
+}
+.text_birch{
+  color: #46c7b3 !important;
+}
 .way {
   padding-left: 25px;
   font-weight: 700;
@@ -2442,14 +2458,98 @@
   top: -7px;
 }
 
+.task_status_box {
+  background-color: #fafafa;
+  padding: 12px 20px 20px 20px;
+}
+.task_status_box:not(:last-child) {
+  margin-bottom: 20px;
+}
+.task_status_time {
+  float: right;
+  color: #777777;
+  text-align: right;
+}
+
+.task_status_time .fa {
+  line-height: 20px;
+  margin-right: 3px;
+}
+.work_people_cont .line_cont{
+  margin-top: 12px;
+  margin-bottom: 15px;
+}
+
+.files_box {
+  padding: 18px 22px;
+  background-color: #ffffff;
+  color: #777777;
+  
+}
+.files_box:not(:last-child) {
+  margin-bottom: 20px;
+}
+.files_box .alignleft {
+  margin-right: 25px;
+}
+
+.files_box .fa {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.notice_files {
+    border-radius: 10px;
+    background-color: #16B6C6;
+    border: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    padding: 3px 20px;
+    margin-right: 10px;
+}
+a.notice_files:hover {
+  color: #ffffff;
+  background-color: #00bfd1
+}
+button.notice_files:hover {
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #00bfd1
+}
+.files_title {
+  float: left;
+}
+.files_box  .task_status_time {
+  float: right;
+  margin-right: 0;
+}
+
+.task_status_box textarea {
+  background-color: #ffffff;
+  border-radius: 0;
+  margin-top: 12px;
+  height: 90px;
+  margin-bottom: 18px;
+}
+.files_box_gray {
+  background-color: #fafafa;
+}
+/* ------------------------------------------------
+    12.1 Button
+------------------------------------------------ */
+
 .btn_square {
   position: relative;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
+  text-decoration: none;
   text-align: center;
   color: #616161;
   padding: 10px 15px;
+  margin-bottom: 20px;
   min-width: 140px;
   display: inline-block;
   border: none;
@@ -2466,6 +2566,7 @@
 .btn_square span {
   position: relative;
   z-index: 2;
+  color: #616161;
 }
 .btn_square:not(:last-child) {
   margin-right: 20px;
@@ -2488,5 +2589,99 @@
   top: -50px;
 }
 .btn_square:hover {
-  box-shadow: 1px 0px 4px 2px #d1d1d1;
+  box-shadow: 1px 0px 5px 2px #d1d1d1;
+  text-decoration: none;
 }
+
+.btn_square_purple {
+  background-color: #7e57c2;
+  color: #ffffff;
+}
+.btn_square_purple span {
+  color: #ffffff;
+}
+.btn_square_purple:after {
+  background-color: #724eaf;
+}
+
+.btn_square_birch {
+  background-color: #01b6c7;
+  color: #ffffff;
+}
+.btn_square_birch span {
+  color: #ffffff;
+}
+.btn_square_birch:after {
+  background-color: #00bfd1;
+}
+
+.btn_square_pink {
+  background-color: #ff4081;
+  color: #ffffff;
+}
+.btn_square_pink span {
+  color: #ffffff;
+}
+.btn_square_pink:after {
+  background-color: #ef3c79;
+}
+
+.btn_square_gray {
+  background-color: #fafafa;
+}
+.btn_square_gray:after {
+  background-color: #efefef;
+}
+
+.btn_square_taupe {
+  background-color: #e8e8e8;
+}
+.btn_square_taupe:after {
+  background-color: #dbdbdb;
+}
+
+
+
+/* ------------------------------------------------
+    12.2 Tabs
+------------------------------------------------ */
+ul.resp-tabs-list {
+  border-bottom: 1px solid #e7e7e7;
+  overflow: hidden;
+  padding-left: 10px;
+}
+.resp-tabs-list li {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 46px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0px 15px;
+    padding: 0px;
+    padding-top: 5px;
+    list-style: none;
+    cursor: pointer;
+    float: left;
+    background-color: #ffffff !important;
+    border-color: rgb(255, 255, 255) !important;
+    border-bottom: 2px solid transparent;
+
+}
+.resp-tabs-list  .resp-tab-active {
+    border: none !important;
+    border-bottom: 2px solid #46b5c7 !important;
+    margin-bottom: 0px !important;
+    padding: 0  !important;
+    padding-top: 5px !important;
+    margin: 0px 15px;
+}
+.resp-tabs-container {
+    padding: 30px 25px;
+    padding-bottom: 10px;
+    border: none !important;
+}
+.resp-tab-content {
+  border: none !important; 
+  padding: 0 !important;
+}
+
