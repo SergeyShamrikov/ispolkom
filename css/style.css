@@ -2665,15 +2665,27 @@ ul.resp-tabs-list {
     background-color: #ffffff !important;
     border-color: rgb(255, 255, 255) !important;
     border-bottom: 2px solid transparent;
-
+    -webkit-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s;
 }
+
+.resp-tabs-list li:hover{
+  color: #46b5c7;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
 .resp-tabs-list  .resp-tab-active {
+    color: #333 !important;
     border: none !important;
     border-bottom: 2px solid #46b5c7 !important;
     margin-bottom: 0px !important;
     padding: 0  !important;
     padding-top: 5px !important;
     margin: 0px 15px;
+    cursor: default;
 }
 .resp-tabs-container {
     padding: 30px 25px;
