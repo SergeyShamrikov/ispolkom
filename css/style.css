@@ -371,11 +371,11 @@
     dt{
       float: left;
       margin-right: 10px;
-      padding-top: 10px;
+      padding-top: 4px;
     }
 
     dd{
-      padding-top: 10px;
+      padding-top: 4px;
       overflow: hidden;
       text-align: right;
     }
@@ -2312,6 +2312,15 @@
     12. task_card page
 
 ------------------------------------------------ */
+.img_resp {
+  text-align: center;
+  margin: 0 auto;
+}
+.img_resp img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
 
 .text_gray {
   color: #777777 !important;
@@ -2696,4 +2705,90 @@ ul.resp-tabs-list {
   border: none !important; 
   padding: 0 !important;
 }
+
+
+
+/* ------------------------------------------------
+
+    13. card_project_2 page
+
+------------------------------------------------ */
+
+
+.list_gray_bg {
+  background-color: #fafafa;
+  padding: 5px 20px 15px 20px;
+}
+
+  /* --------------------------------------------
+        13.1. Navigation 2
+  -------------------------------------------- */
+    
+    .navigation_2{
+      background-color: #ffffff;
+      -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.1);
+      box-shadow: 0 0 4px rgba(0,0,0,0.1);
+      padding: 0px 20px;
+      text-align: justify;
+      margin-bottom: 25px;
+    }
+
+    .navigation_2 li{
+      display: inline-block;
+      text-align: center;
+      padding: 0 5px;
+    }
+    .navigation_2:after {
+      content: "";
+      display: inline-block;
+      width: 100%;
+    }
+
+    .navigation_2 li a{
+      display: block;
+      font-size: 14px;
+      line-height: 14px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #777777;
+      position: relative;
+      top: 15px;
+    }
+
+    .navigation_2 li a:hover{
+      color: #46b5c7;
+    }
+
+    .navigation_2 li.current a,
+    .navigation_2 li.current a:hover{
+      color: #46b5c7;
+    }
+    .navigation_2 li .fa {
+      margin-right: 6px;
+    }
+
+  /* --------------------------------------------
+        13.2. Two cell
+  -------------------------------------------- */
+
+    .two_cell_wr {
+      overflow: hidden;
+    }
+    .two_cell_in {
+      margin-right: -12px;
+      margin-left: -12px;
+    }
+    .two_cell {
+      float: left;
+      width: 50%;
+      padding: 0 12px;
+    }
+    .two_cell_box {
+      background-color: #ffffff;
+      overflow: hidden;
+      -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.1);
+      box-shadow: 0 0 4px rgba(0,0,0,0.1);
+      padding-bottom: 15px;
+      margin-bottom: 25px;
+    }
 
