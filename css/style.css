@@ -2366,6 +2366,10 @@
   color: #777777;
 
 }
+.work_box_right_wr {
+  float: right;
+  width: 310px;
+}
 .work_box_right {
   float: right;
   background-color: #ffffff;
@@ -2705,7 +2709,10 @@ ul.resp-tabs-list {
   border: none !important; 
   padding: 0 !important;
 }
-
+.resp-tabs-list .fa {
+  margin-top: 15px;
+  margin-right: 6px;
+}
 
 
 /* ------------------------------------------------
@@ -2792,3 +2799,79 @@ ul.resp-tabs-list {
       margin-bottom: 25px;
     }
 
+/* ------------------------------------------------
+
+    14. stranitsa-2 page
+
+------------------------------------------------ */
+.nav_tasks {
+    padding-left: 25px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #777777;
+    padding-top: 2px;
+    padding-bottom: 16px;
+    text-transform: uppercase;
+}
+.nav_tasks a {
+  font-weight: 700;
+    font-size: 14px;
+    color: #777777;
+}
+.nav_tasks li {
+  display: inline-block;
+}
+.nav_tasks li:not(:last-child) {
+  margin-right: 20px;
+}
+.nav_tasks .current a {
+  color: #16b6c6;
+}
+
+
+.ava_lg_wr {
+    width: 144px;
+    height: 144px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 0 auto; 
+    margin-bottom: 25px;
+}
+.ava_lg {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.ava_edit_icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  color: #777777;
+}
+.ava_edit_icon a {
+  color: #777777;
+}
+.ava_edit_icon a:hover {
+  color: #16b6c6;
+}
+
+.task_table_2 th, .task_table_2 td {
+  padding: 10px;
+  color: #777777;
+}
+.task_table_2 th{
+  border-right: none !important;
+}
+.task_table_2 {
+  color: #777777;
+}
+.task_table_2 thead {
+  background-color: transparent;
+}
+.task_table_2 th {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e8e8e8;
+}
