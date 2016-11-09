@@ -270,12 +270,12 @@
                                     <table class="task_table_2">
                                         <thead>
                                             <tr>
-                                                <th>НАзВАНИЕ</th>
-                                                <th>НАЧАЛО</th>
-                                                <th>ЗАВЕРШЕНИЕ</th>
-                                                <th>ответственный</th>
-                                                <th>%</th>
-                                                <th>СТАТУС</th>
+                                                <th class="task_table_cell_1">НАзВАНИЕ</th>
+                                                <th class="task_table_cell_2">НАЧАЛО</th>
+                                                <th class="task_table_cell_3">ЗАВЕРШЕНИЕ</th>
+                                                <th class="task_table_cell_4">ответственный</th>
+                                                <th class="task_table_cell_5">%</th>
+                                                <th class="task_table_cell_6">СТАТУС</th>
                                             </tr>                                             
                                         </thead>
                                         <tbody>
@@ -285,18 +285,90 @@
                                                 <td>20.10.2016</td>
                                                 <td>Новиков И.</td>
                                                 <td>
-                                                    <div class="percent_complete proggres_bur" data-val='80'>
+                                                    <div class="percent_complete proggres_bur" data-val='50'>
                                                         <span class="proggres_bur_inner"></span>
                                                         <em class="proggres_bur_val"></em>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <span class="notice_files">Исходник</span>
+                                                    <span class="notice_status notice_status_start"><i class="fa fa-play-circle" aria-hidden="true"></i>Старт</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Подготовить краткое описание задачи “Проектирование освещения”</td>
+                                                <td>20.10.2016</td>
+                                                <td>20.10.2016</td>
+                                                <td>Новиков И.</td>
+                                                <td>
+                                                    <div class="percent_complete proggres_bur" data-val='50'>
+                                                        <span class="proggres_bur_inner"></span>
+                                                        <em class="proggres_bur_val"></em>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <span class="notice_status notice_status_pending"><i class="fa fa-clock-o" aria-hidden="true"></i>Ожидает</span>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Подготовить краткое описание задачи “Проектирование освещения”</td>
+                                                <td>20.10.2016</td>
+                                                <td>20.10.2016</td>
+                                                <td>Новиков И.</td>
+                                                <td>
+                                                    <div class="percent_complete proggres_bur" data-val='50'>
+                                                        <span class="proggres_bur_inner"></span>
+                                                        <em class="proggres_bur_val"></em>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <span class="notice_status notice_status_pause"><i class="fa fa-pause-circle" aria-hidden="true"></i>Пауза</span>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Подготовить краткое описание задачи “Проектирование освещения”</td>
+                                                <td>20.10.2016</td>
+                                                <td>20.10.2016</td>
+                                                <td>Новиков И.</td>
+                                                <td>
+                                                    <div class="percent_complete proggres_bur" data-val='50'>
+                                                        <span class="proggres_bur_inner"></span>
+                                                        <em class="proggres_bur_val"></em>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <span class="notice_status notice_status_consistent"><i class="fa fa-hand-paper-o" aria-hidden="true"></i>Согласуется</span>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Подготовить краткое описание задачи “Проектирование освещения”</td>
+                                                <td>20.10.2016</td>
+                                                <td>20.10.2016</td>
+                                                <td>Новиков И.</td>
+                                                <td>
+                                                    <div class="percent_complete proggres_bur" data-val='50'>
+                                                        <span class="proggres_bur_inner"></span>
+                                                        <em class="proggres_bur_val"></em>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <span class="notice_status notice_status_completed"><i class="fa fa-stop-circle" aria-hidden="true"></i>Завершенo</span>
                                                 </td>
                                             </tr>
                                                                                                      
                                         </tbody>
                                     </table>
+
+
+                                    <div class="">
+
+                                        <input type="checkbox" id="hide_completed">
+
+                                        <label for="hide_completed" class="circle_label title_text_9">скрыть завершенные</label>
+            
+                                    </div>
 
 
                                 </div>
@@ -305,63 +377,109 @@
                                 <!-- Tab 2 -->
                                 <div>
 
-                                    <div class="task_status_box">
-
-                                        <div class="work_people">
-                                            <div class="work_people_ava">
-                                                <img src="images/ava_work_people_1.png" alt="">
-                                            </div>
-                                            
-                                            <div class="work_people_cont">
-                                                <div class="clearfix">
-                                                    <div class="alignleft">
-                                                        <p>Мирошник Елена</p>
-                                                        <p><span>Начальник отдела</span></p>
+                                    <table class="task_table_2">
+                                        <thead>
+                                            <tr>
+                                                <th class="task_table_cell_1">НАзВАНИЕ</th>
+                                                <th class="task_table_cell_2">НАЧАЛО</th>
+                                                <th class="task_table_cell_3">ЗАВЕРШЕНИЕ</th>
+                                                <th class="task_table_cell_4">ответственный</th>
+                                                <th class="task_table_cell_5">%</th>
+                                                <th class="task_table_cell_6">СТАТУС</th>
+                                            </tr>                                             
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Подготовить краткое описание задачи “Проектирование освещения”</td>
+                                                <td>20.10.2016</td>
+                                                <td>20.10.2016</td>
+                                                <td>Новиков И.</td>
+                                                <td>
+                                                    <div class="percent_complete proggres_bur" data-val='50'>
+                                                        <span class="proggres_bur_inner"></span>
+                                                        <em class="proggres_bur_val"></em>
                                                     </div>
-                                                    <div class="task_status_time">
-                                                        <p>
-                                                            <i class="fa fa-clock-o" aria-hidden="true"></i> 24.10.2016  18.00 <br>
-                                                        </p>
-                                                        
+                                                </td>
+                                                <td>
+                                                    <span class="notice_status notice_status_start"><i class="fa fa-play-circle" aria-hidden="true"></i>Старт</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Подготовить краткое описание задачи “Проектирование освещения”</td>
+                                                <td>20.10.2016</td>
+                                                <td>20.10.2016</td>
+                                                <td>Новиков И.</td>
+                                                <td>
+                                                    <div class="percent_complete proggres_bur" data-val='50'>
+                                                        <span class="proggres_bur_inner"></span>
+                                                        <em class="proggres_bur_val"></em>
                                                     </div>
-                                                </div>
+                                                </td>
+                                                <td>
+                                                    <span class="notice_status notice_status_pending"><i class="fa fa-clock-o" aria-hidden="true"></i>Ожидает</span>
+                                                </td>
+                                            </tr>
 
-                                                <div class="line_cont"></div>
-                                                <p class="text_gray">Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке модели развития. Таким образом постоянный количественный рост и сфера нашей активности представляет. </p>
-                                            </div>
-                                        </div>
+                                            <tr>
+                                                <td>Подготовить краткое описание задачи “Проектирование освещения”</td>
+                                                <td>20.10.2016</td>
+                                                <td>20.10.2016</td>
+                                                <td>Новиков И.</td>
+                                                <td>
+                                                    <div class="percent_complete proggres_bur" data-val='50'>
+                                                        <span class="proggres_bur_inner"></span>
+                                                        <em class="proggres_bur_val"></em>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <span class="notice_status notice_status_pause"><i class="fa fa-pause-circle" aria-hidden="true"></i>Пауза</span>
+                                                </td>
+                                            </tr>
 
+                                            <tr>
+                                                <td>Подготовить краткое описание задачи “Проектирование освещения”</td>
+                                                <td>20.10.2016</td>
+                                                <td>20.10.2016</td>
+                                                <td>Новиков И.</td>
+                                                <td>
+                                                    <div class="percent_complete proggres_bur" data-val='50'>
+                                                        <span class="proggres_bur_inner"></span>
+                                                        <em class="proggres_bur_val"></em>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <span class="notice_status notice_status_consistent"><i class="fa fa-hand-paper-o" aria-hidden="true"></i>Согласуется</span>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Подготовить краткое описание задачи “Проектирование освещения”</td>
+                                                <td>20.10.2016</td>
+                                                <td>20.10.2016</td>
+                                                <td>Новиков И.</td>
+                                                <td>
+                                                    <div class="percent_complete proggres_bur" data-val='50'>
+                                                        <span class="proggres_bur_inner"></span>
+                                                        <em class="proggres_bur_val"></em>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <span class="notice_status notice_status_completed"><i class="fa fa-stop-circle" aria-hidden="true"></i>Завершенo</span>
+                                                </td>
+                                            </tr>
+                                                                                                     
+                                        </tbody>
+                                    </table>
+
+
+                                    <div class="">
+
+                                        <input type="checkbox" id="hide_completed">
+
+                                        <label for="hide_completed" class="circle_label title_text_9">скрыть завершенные</label>
+            
                                     </div>
 
-                                    <div class="task_status_box">
-
-                                        <div class="work_people">
-
-                                            <div class="work_people_ava">
-                                                <img src="images/ava_work_people_2.png" alt="">
-                                            </div>
-                                            
-                                            <div class="work_people_cont">
-                                                <div class="clearfix">
-                                                    <div class="alignleft">
-                                                        <p>Кашфразиева Светлана</p>
-                                                        <p><span>Архитектор</span> </p>
-                                                    </div>
-                                                    <div class="task_status_time">
-                                                        <p>
-                                                            <i class="fa fa-clock-o" aria-hidden="true"></i> 24.10.2016  18.00 <br>
-                                                        </p>
-                                                    </div>
-                                                    <form action="">
-                                                        <textarea></textarea>
-                                                        <button class="btn_square btn_square_purple"><span>Отправить</span></button>
-                                                    </form>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
 
                                 </div>
 

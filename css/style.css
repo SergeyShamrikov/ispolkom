@@ -2828,7 +2828,9 @@ ul.resp-tabs-list {
   color: #16b6c6;
 }
 
-
+  /* --------------------------------------------
+        14.1. Ava lg
+  -------------------------------------------- */
 .ava_lg_wr {
     width: 144px;
     height: 144px;
@@ -2856,9 +2858,29 @@ ul.resp-tabs-list {
   color: #16b6c6;
 }
 
+  /* --------------------------------------------
+        14.2. Task table 2
+  -------------------------------------------- */
+.task_table_2 {
+  border-bottom: none !important; 
+  margin-bottom: 25px;
+}
 .task_table_2 th, .task_table_2 td {
-  padding: 10px;
+  padding: 12px 10px;
   color: #777777;
+}
+.task_table_2 th:first-child, .task_table_2 td:first-child {
+  padding-left: 0;
+}
+.task_table_2 th:last-child, .task_table_2 td:last-child {
+  padding-right: 0;
+}
+.task_table_2 tbody tr:first-child td {
+  padding-top: 30px;
+}
+.task_table_2 tbody tr:last-child td {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e8e8e8;
 }
 .task_table_2 th{
   border-right: none !important;
@@ -2869,9 +2891,122 @@ ul.resp-tabs-list {
 .task_table_2 thead {
   background-color: transparent;
 }
+.task_table_2 tbody tr {
+  border-bottom: none;
+  
+}
 .task_table_2 th {
   font-size: 9px;
   font-weight: 700;
   text-transform: uppercase;
   border-bottom: 1px solid #e8e8e8;
+}
+.task_table_cell_2, .task_table_cell_3 {
+  width: 90px;
+}
+.task_table_cell_4, .task_table_cell_5 {
+  width: 110px;
+}
+.task_table_cell_6 {
+  width: 120px;
+}
+.task_table_2 .percent_complete  {
+  margin-top: 5px;
+}
+  /* --------------------------------------------
+        14.3. Notice status
+  -------------------------------------------- */
+.notice_status {
+  min-width: 110px;
+  display: inline-block;
+  border-radius: 12px;
+  background-color: #00cccc;
+  border: none;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  padding: 3px 5px;
+  text-align: center;
+}
+.notice_status .fa {
+  margin-top: 3px;
+  margin-right: 3px;
+  font-size: 13px;
+}
+.task_table_2 .notice_status {
+  margin-top: -4px;
+}
+.notice_status_start {
+  background-color: #00cccc;
+}
+.notice_status_pending {
+  background-color: #f1a80a;
+}
+.notice_status_pause {
+  background-color: #777777;
+}
+.notice_status_consistent {
+  background-color: #ff4081;
+}
+.notice_status_completed {
+  background-color: #16b6c6;
+}
+
+  /* --------------------------------------------
+        14.4. Notice status
+  -------------------------------------------- */
+
+.circle_label{
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 25px;
+  padding:0 0 0 40px;
+  cursor: pointer;
+}
+
+.circle_label:before{
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background-color: #f6f5f5;
+  box-shadow: 0 1px 1px 0px #d3d3d3;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.circle_label:after{
+  content: "\f00c";
+  font-family: 'FontAwesome';
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  width: 0;
+  height: 20px;
+  line-height: 20px;
+  font-size: 16px;
+  color: #00B7C8;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+input[type="checkbox"]:checked + .circle_label:after,
+input[type="radio"]:checked + .circle_label:after{
+  width: 20px;
+}
+.title_text_9 {
+  font-size: 9px;
+  font-weight: 700;
+  color: #777777;
+  text-transform: uppercase;
 }
