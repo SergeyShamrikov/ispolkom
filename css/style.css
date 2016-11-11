@@ -38,7 +38,6 @@
 @import "../fonts/themify-icons/themify-icons.css";
 
 @import 'https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i&subset=cyrillic';
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
 
 /* ------------------------------------------------
 
@@ -2340,7 +2339,6 @@
 }
 .way {
   padding-left: 25px;
-  font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 14px;
   color: #777777;
@@ -2364,7 +2362,6 @@
   border-bottom: 1px solid #e7e7e7;
   text-transform: uppercase;
   font-size: 14px;
-  font-family: 'Lato', sans-serif;
   font-weight: 700;
   color: #777777;
 
@@ -2667,7 +2664,6 @@ ul.resp-tabs-list {
   padding-left: 10px;
 }
 .resp-tabs-list li {
-    font-family: 'Lato', sans-serif;
     font-weight: 700;
     font-size: 14px;
     line-height: 46px;
@@ -2768,7 +2764,6 @@ ul.resp-tabs-list {
       font-size: 14px;
       line-height: 14px;
       text-transform: uppercase;
-      font-family: 'Lato', sans-serif;
       font-weight: 700;
       color: #777777;
       position: relative;
@@ -2819,7 +2814,6 @@ ul.resp-tabs-list {
 ------------------------------------------------ */
 .nav_tasks {
     padding-left: 25px;
-    font-family: 'Lato', sans-serif;
     font-weight: 700;
     font-size: 14px;
     color: #777777;
@@ -2910,17 +2904,16 @@ ul.resp-tabs-list {
   
 }
 .task_table_2 th {
-  font-family: 'Lato', sans-serif;
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
   border-bottom: 1px solid #e8e8e8;
 }
 .task_table_cell_2, .task_table_cell_3 {
-  width: 90px;
+  width: 95px;
 }
 .task_table_cell_4, .task_table_cell_5 {
-  width: 110px;
+  width: 115px;
 }
 .task_table_cell_6 {
   width: 120px;
@@ -2937,7 +2930,6 @@ ul.resp-tabs-list {
   border-radius: 12px;
   background-color: #00cccc;
   border: none;
-  font-family: 'Lato', sans-serif;
   font-size: 12px;
   line-height: 20px;
   font-weight: 700;
@@ -3020,9 +3012,8 @@ input[type="checkbox"]:checked + .circle_label:after,
 input[type="radio"]:checked + .circle_label:after{
   width: 20px;
 }
-.title_text_9 {
-  font-family: 'Lato', sans-serif;
-  font-size: 9px;
+.title_text_11 {
+  font-size: 11px;
   font-weight: 700;
   color: #777777;
   text-transform: uppercase;
