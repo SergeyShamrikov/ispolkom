@@ -2428,6 +2428,8 @@
 }
 .work_people_cont {
   overflow: hidden;
+  color: #333333;
+  line-height: 22px;
 }
 .work_people_cont span {
   color: #777777;
@@ -2871,6 +2873,8 @@ ul.resp-tabs-list {
   -------------------------------------------- */
 .task_table_2 {
   border-bottom: none !important; 
+}
+.task_table_2:not(:last-child) {
   margin-bottom: 25px;
 }
 .task_table_2 th, .task_table_2 td {
@@ -2886,7 +2890,7 @@ ul.resp-tabs-list {
 .task_table_2 tbody tr:first-child td {
   padding-top: 30px;
 }
-.task_table_2 tbody tr:last-child td {
+.task_table_2:not(:last-child) tbody tr:last-child td {
   padding-bottom: 30px;
   border-bottom: 1px solid #e8e8e8;
 }
@@ -3000,7 +3004,7 @@ ul.resp-tabs-list {
   width: 0;
   height: 20px;
   line-height: 20px;
-  font-size: 16px;
+  font-size: 16px;work_people_cont
   color: #00B7C8;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -3017,4 +3021,35 @@ input[type="radio"]:checked + .circle_label:after{
   font-weight: 700;
   color: #777777;
   text-transform: uppercase;
+}
+
+/* ------------------------------------------------
+
+    15. notice_2 page
+
+------------------------------------------------ */
+
+
+.notis_table_cell_4 {
+  width: 140px;
+}
+.notis_table_cell_5 {
+  width: 110px;
+}
+.notis_table_cell_6 {
+  width: 22px;
+}
+
+.cell_close {
+  color: #ff4081;
+}
+th .cell_close {
+  color: #777777;
+}
+.cell_close:hover {
+  color: #69a6ac;
+}
+.table_fz14 td {
+  font-size: 14px;
+  line-height: 18px;
 }
