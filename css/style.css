@@ -3053,3 +3053,6 @@ th .cell_close {
   font-size: 14px;
   line-height: 20px;
 }
+table .work_people {
+  margin-top: -3px;
+}
