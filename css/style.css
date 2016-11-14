@@ -3030,8 +3030,8 @@ input[type="radio"]:checked + .circle_label:after{
 ------------------------------------------------ */
 
 
-.notis_table_cell_4 {
-  width: 140px;
+.notis_table_cell_1 {
+  width: 250px;
 }
 .notis_table_cell_5 {
   width: 110px;
@@ -3051,5 +3051,5 @@ th .cell_close {
 }
 .table_fz14 td {
   font-size: 14px;
-  line-height: 18px;
+  line-height: 20px;
 }
