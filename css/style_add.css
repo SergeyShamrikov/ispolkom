@@ -10,7 +10,7 @@
 	color: #4cc1ce;
 	position: absolute;
 	margin: 1px 4px;
-  font-weight: bold;
+  	font-weight: bold;
 }
 
 .black_color{
@@ -24,9 +24,9 @@
 	display: inline-block;
 	text-align: center;
 	padding: 2px 4px;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
+ 	font-weight: bold;
+ 	font-size: 14px;
+ 	line-height: 16px;
 }
 
 .my_btn{
@@ -38,16 +38,103 @@
 	padding: 5px 18px;
 	border: none;
 	font-size: 14px;
-  cursor: pointer;
-  outline: none;
+  	cursor: pointer;
+  	outline: none;
 }
 .my_btn:hover {
-  background-color: #16B6C6;
+  	background-color: #16B6C6;
 }
 
 .table_td_border td {
-  border-bottom: 1px solid #e8e8e8;
+  	border-bottom: 1px solid #e8e8e8;
 }
 .fz14 td {
-  font-size: 14px;
+  	font-size: 14px;
+}
+
+.finance_table_cell_2{
+	width: 12%;
+}
+
+.finance_table_cell_3{
+	width: 12%;
+}
+
+.finance_table_cell_4{
+	width: 12%;
+}
+
+.finance_table_cell_5{
+	width: 12%;
+}
+
+.emeil{
+	float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.f_salary_table_cell_2{
+	width: 25%;
+}
+
+.f_salary_table_cell_3{
+	width: 14%;
+}
+
+.f_salary_table_cell_4{
+	width: 14%;
+}
+
+.f_salary_table_cell_5{
+	width: 14%;
+}
+
+.f_salary_table_cell_6{
+	width: 14%;
+}
+
+.return{
+	color: #9a9a9a;
+	background-color: #f1f1f1;
+	border-radius: 11px;
+	line-height: 16px;
+	padding: 5px 24px;
+	border: none;
+	font-size: 14px;
+  	cursor: pointer;
+  	outline: none;
+  	display: inline-block;
+	margin-right: 24px;
+}
+
+.return:hover {
+  	background-color: #16B6C6;
+}
+
+.next{
+	color: #fff;
+	background-color: #46c7b3;
+	border-radius: 11px;
+	line-height: 16px;
+	padding: 5px 24px;
+	border: none;
+	font-size: 14px;
+  	cursor: pointer;
+  	outline: none;
+  	display: inline-block;
+	margin-right: 25px;
+}
+
+.next:hover{
+  	background-color: #16B6C6;
 }
