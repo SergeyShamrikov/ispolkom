@@ -10,6 +10,7 @@
 	color: #4cc1ce;
 	position: absolute;
 	margin: 1px 4px;
+  font-weight: bold;
 }
 
 .black_color{
@@ -18,12 +19,14 @@
 
 .color_fon{
 	color: #ffffff;
-	border-radius: 50%;
-	width: 20px;
-	height: 20px;
+	border-radius: 10px;
+	min-width: 20px;
 	display: inline-block;
 	text-align: center;
-	padding: 2px;
+	padding: 2px 4px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .my_btn{
@@ -35,4 +38,16 @@
 	padding: 5px 18px;
 	border: none;
 	font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+.my_btn:hover {
+  background-color: #16B6C6;
+}
+
+.table_td_border td {
+  border-bottom: 1px solid #e8e8e8;
+}
+.fz14 td {
+  font-size: 14px;
 }
