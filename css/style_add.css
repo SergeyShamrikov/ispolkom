@@ -1,0 +1,38 @@
+.info_i{
+	border: 1px solid #4cc1ce;
+	border-radius: 50%;
+	width: 13px;
+	height: 13px;
+	text-align: center;
+	font-size: 9px;
+	line-height: 13px;
+	display: inline-block;
+	color: #4cc1ce;
+	position: absolute;
+	margin: 1px 4px;
+}
+
+.black_color{
+	color: #000;
+}
+
+.color_fon{
+	color: #ffffff;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	text-align: center;
+	padding: 2px;
+}
+
+.my_btn{
+	color: #fff;
+	background-color: #46c7b3;
+	display: inline-block;
+	border-radius: 11px;
+	line-height: 16px;
+	padding: 5px 18px;
+	border: none;
+	font-size: 14px;
+}
