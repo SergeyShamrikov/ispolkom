@@ -94,8 +94,10 @@
                 self.templateContactParameter ='<div class="form_row remove_box"><div class="label_col_1"><label>Параметр</label></div><div class="input_box6 align_center"><div class="input_box6_inner alignleft"><input type="text"></div><div class="input_box6_inner alignright"><label>Единица</label><input type="text"></div><div class="input_box6_inner"><label>Значение</label><input type="text"></div></div><button class="close_btn" type="button"><i class="ti-close"></i></button></div>';
 
                 self.templateAddFile ='<div class="form_row remove_box"><h6 class="name_load_file">Название файла</h6><a href="javascript:;" class="close_btn type1"><i class="ti-close"></i></a><div class="align_justify"><div class="file_name_box"><input type="text" placeholder="Имя"></div> <button type="button" class="btn grey border">Загрузить исходный файл</button> <button type="button" class="btn grey border">Загрузить PDF файл</button></div></div>';
+
+                self.templateAddFileFin ='<div class="form_row remove_box"><div class="form_box_fin_wr clearfix"><div class="form_box_fin_1"><div class="form_box_fin_in form_box_fin_error"><input type="text" class="input_light align_right" value=""/><span>%</span></div></div><div class="form_box_fin_2"><div class="form_box_fin_in form_line form_box_fin_error"><input type="text" class="input_light" value=""/><span class="btn_off_form"><span class="icon_del">-</span></span></div></div></div></div>';
                 
-                self.templates = [self.templateContactPerson, self.templateContactParameter, self.templateAddFile];
+                self.templates = [self.templateContactPerson, self.templateContactParameter, self.templateAddFile, self.templateAddFileFin];
 
                 self.event();
 
@@ -119,7 +121,12 @@
 					var parent = $(this).closest('.remove_box'); 
 					self.removeInfo(parent);
 				});
-				
+
+				$('body').on("click", '.btn_off_form', function(){
+
+					var parent = $(this).closest('.remove_box'); 
+					self.removeInfo(parent);
+				});
 			},
 
 			addFields: function(idTempl, parent){

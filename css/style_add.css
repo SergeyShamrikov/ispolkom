@@ -98,7 +98,7 @@
 }
 
 .f_salary_table_cell_6{
-	width: 14%;
+	width: 10%;
 }
 
 .btn_grey_sm{
@@ -116,7 +116,8 @@
 }
 
 .btn_grey_sm:hover {
-  	background-color: #f4f4f4;
+  	background-color: #e6e6e6;
+    color: #9a9a9a;
 }
 
 .label_table{
@@ -132,3 +133,140 @@
 	color: #777777;
 }
 
+.task_table_2 .label_table + td {
+  padding-left: 0;
+} 
+.task_table_2 .pl_0,
+.pl_0 {
+  padding-left: 0;
+}
+
+input:not([type="radio"]):not([type="checkbox"]):not([type="file"]).input_light,
+    textarea.input_light {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  color: #777777;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  
+}
+.prise_form input:not([type="radio"]):not([type="checkbox"]):not([type="file"]).input_light,
+.prise_form textarea.input_light {
+  width: 55px;
+  text-align: right;
+}
+.prise_form {
+  position: relative;
+  display: inline-block;
+}
+.prise_form:before,
+.prise_form:after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  right: 0;
+  width: 25px;
+  height: 1px;
+  background-color: #777777;
+}
+.prise_form:after {
+  right: auto;
+  left: 0;
+}
+
+.prise_form_error:before,
+.prise_form_error:after,
+.prise_form.active:before,
+.prise_form.active:after {
+  background-color: #ff0000;
+}
+
+.work_box_left_sm {
+  max-width: 470px;
+}
+
+.title_finance_add {
+  color: #777777;
+  font-size: 12px;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 9px;
+}
+
+.form_box_fin_wr {
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+.form_box_fin_1 {
+  width: 40px;
+  float: left;
+}
+.form_box_fin_2 {
+  width: 368px;
+  float: right;
+}
+.form_box_fin_in {
+  position: relative;
+}
+.form_box_fin_in input:not([type="radio"]):not([type="checkbox"]):not([type="file"]).input_light, .form_box_fin_in textarea {
+  padding-right: 16px;
+}
+.form_box_fin_in span {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.icon_del {
+  width: 13px;
+  height: 13px;
+  border-radius: 100%;
+  border: 1px solid #777777;
+  line-height: 11px;
+  color: #777777;
+  text-align: center;
+  position: relative;
+}
+.icon_del:before {
+  content: '';
+  width: 7px;
+  height: 1px;
+  background-color: #777777;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0px 1px 0px #777777;
+}
+.btn_off_form {
+  cursor: pointer;
+}
+.form_line:after {
+  content: ' ';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #e8e8e8;
+}
+
+.form_box_fin_error:after {
+  content: ' ';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #ff0000;
+}
+.work_box_fin fieldset:not(:last-child) {
+    margin-bottom: 0px;
+}
