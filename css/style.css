@@ -38,7 +38,7 @@
 @import "../fonts/themify-icons/themify-icons.css";
 
 @import 'https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i&subset=cyrillic';
-@import "style_add.css";
+
 /* ------------------------------------------------
 
     1. Default stylesheets
@@ -3056,3 +3056,384 @@ th .cell_close {
 table .work_people {
   margin-top: -3px;
 }
+
+
+
+  /* --------------------------------------------
+        Buttons New
+  -------------------------------------------- */
+
+      .btn_blue_sm{
+        color: #fff;
+        background-color: #46c7b3;
+        display: inline-block;
+        border-radius: 11px;
+        line-height: 16px;
+        padding: 5px 18px;
+        border: none;
+        font-size: 14px;
+          cursor: pointer;
+          outline: none;
+      }
+      .btn_blue_sm:hover {
+          background-color: #16B6C6;
+          color: #ffffff;
+      }
+
+
+      .btn_grey_sm{
+        color: #9a9a9a;
+        background-color: #f1f1f1;
+        border-radius: 11px;
+        line-height: 16px;
+        padding: 5px 24px;
+        border: none;
+        font-size: 14px;
+        cursor: pointer;
+        outline: none;
+        display: inline-block;
+        margin-right: 24px;
+      }
+
+      .btn_grey_sm:hover {
+          background-color: #e6e6e6;
+          color: #9a9a9a;
+      }
+
+      .btn_purple_sm {
+        color: #fff;
+        background-color: #7365cb;
+        display: inline-block;
+        border-radius: 11px;
+        line-height: 16px;
+        padding: 5px 18px;
+        border: none;
+        font-size: 14px;
+          cursor: pointer;
+          outline: none;
+      }
+      .btn_purple_sm:hover {
+          background-color: #7f70dd;
+          color: #ffffff;
+      }
+      .btn_purple_sm .fa-paperclip {
+        font-size: 12px;
+        margin-right: 3px;
+        line-height: 16px;
+      }
+
+      .btn_add_form{
+        border: none;
+        outline: none;
+        background: transparent;
+        cursor: pointer;
+      }
+      
+      .btn_add_form:hover .icon_btn_plus{
+        background-color: #fbc145;
+      }
+
+      .btn_add_form span{
+        padding-left: 15px;
+        line-height: 40px;
+        color: #777777;
+        font-weight: 600;
+      }
+
+      .icon_btn_plus{
+        background: #f1a80a;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        box-shadow: 0 1px 5px 3px #e0e0e0;
+        display: inline-block;
+        color: #ffffff;
+        text-align: center;
+        font-size: 20px;
+        line-height: 40px;
+      }
+
+      .btn_gray_square {
+        color: #777777;
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px 30px;
+        line-height: 20px;
+        font-size: 14px;
+        border: none;
+        cursor: pointer;
+        background-color: #ebebeb;
+        outline: none;
+        border-bottom: 1px solid #d1d1d1;
+      }
+      .btn_gray_square:hover {
+        color: #777777;
+        background-color: #e6e6e6;
+      }
+      .btn_blue_square {
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px 30px;
+        line-height: 20px;
+        font-size: 14px;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        border-bottom: 1px solid #16b6c6;
+        color: #ffffff;
+        background-color: #16b6c6;
+      }
+      .btn_blue_square:hover {
+        color: #ffffff;
+        background-color: #72d3dc;
+      }
+      .btn_blue_square .fa {
+        margin-right: 4px;
+        line-height: 18px;
+      }
+    
+  /* --------------------------------------------
+        Table size 
+  -------------------------------------------- */
+
+      .table_td_border td {
+          border-bottom: 1px solid #e8e8e8;
+      }
+      .fz14 td {
+          font-size: 14px;
+      }
+
+      .finance_table_cell_2{
+        width: 12%;
+      }
+
+      .finance_table_cell_3{
+        width: 12%;
+      }
+
+      .finance_table_cell_4{
+        width: 12%;
+      }
+
+      .finance_table_cell_5{
+        width: 12%;
+      }
+
+      .f_salary_table_cell_2{
+        width: 25%;
+      }
+
+      .f_salary_table_cell_3{
+        width: 14%;
+      }
+
+      .f_salary_table_cell_4{
+        width: 14%;
+      }
+
+      .f_salary_table_cell_5{
+        width: 14%;
+      }
+
+      .f_salary_table_cell_6{
+        width: 10%;
+      }
+
+  /* --------------------------------------------
+        Finance 
+  -------------------------------------------- */
+
+      .info_i{
+        border: 1px solid #4cc1ce;
+        border-radius: 50%;
+        width: 13px;
+        height: 13px;
+        text-align: center;
+        font-size: 9px;
+        line-height: 13px;
+        display: inline-block;
+        color: #4cc1ce;
+        position: absolute;
+        margin: 1px 4px;
+          font-weight: bold;
+      }
+
+      .black_color{
+        color: #000;
+      }
+
+      .color_fon{
+        color: #ffffff;
+        border-radius: 10px;
+        min-width: 20px;
+        display: inline-block;
+        text-align: center;
+        padding: 2px 4px;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+      }
+
+      .label_table{
+        text-transform: uppercase;
+        color: #393939;
+      }
+
+      .title_list{
+        padding: 0 27px 15px 27px;
+      }
+
+      .title_list span{
+        color: #777777;
+      }
+
+      .task_table_2 .label_table + td {
+        padding-left: 0;
+      }
+      .task_table_2 .pl_0,
+      .pl_0 {
+        padding-left: 0;
+      }
+
+      input:not([type="radio"]):not([type="checkbox"]):not([type="file"]).input_light,
+          textarea.input_light {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        border-radius: 0;
+        color: #777777;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+
+      }
+      .prise_form input:not([type="radio"]):not([type="checkbox"]):not([type="file"]).input_light,
+      .prise_form textarea.input_light {
+        width: 55px;
+        text-align: right;
+      }
+      .prise_form {
+        position: relative;
+        display: inline-block;
+      }
+      .prise_form:before,
+      .prise_form:after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        right: 0;
+        width: 25px;
+        height: 1px;
+        background-color: #777777;
+      }
+      .prise_form:after {
+        right: auto;
+        left: 0;
+      }
+
+      .prise_form_error:before,
+      .prise_form_error:after,
+      .prise_form.active:before,
+      .prise_form.active:after {
+        background-color: #ff0000;
+      }
+
+      .work_box_left_sm {
+        max-width: 470px;
+      }
+
+      .title_finance_add {
+        color: #777777;
+        font-size: 12px;
+        border-bottom: 1px solid #e8e8e8;
+        padding-bottom: 9px;
+      }
+
+      .form_box_fin_wr {
+        padding-top: 15px;
+        padding-bottom: 5px;
+      }
+      .form_box_fin_1 {
+        width: 40px;
+        float: left;
+      }
+      .form_box_fin_2 {
+        width: 368px;
+        float: right;
+      }
+      .form_box_fin_in {
+        position: relative;
+      }
+      .form_box_fin_in input:not([type="radio"]):not([type="checkbox"]):not([type="file"]).input_light, .form_box_fin_in textarea {
+        padding-right: 16px;
+      }
+      .form_box_fin_in span {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        -o-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+      }
+      .icon_del {
+        width: 13px;
+        height: 13px;
+        border-radius: 100%;
+        border: 1px solid #777777;
+        line-height: 11px;
+        color: #777777;
+        text-align: center;
+        position: relative;
+      }
+      .icon_del:before {
+        content: '';
+        width: 7px;
+        height: 1px;
+        background-color: #777777;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0px 1px 0px #777777;
+      }
+      .btn_off_form {
+        cursor: pointer;
+      }
+      .form_line:after {
+        content: ' ';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background-color: #e8e8e8;
+      }
+
+      .form_box_fin_error:after {
+        content: ' ';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background-color: #ff0000;
+      }
+      .work_box_fin fieldset:not(:last-child) {
+          margin-bottom: 0px;
+      }
+
+
+      .input_file_box_fin {
+        padding: 9px 0;
+        border-bottom: 1px solid #e8e8e8;
+        position: relative;
+      }
+      .input_file_box_fin .clear_file {
+        display: none;
+      }
+      .input_file_box_fin .name_file {
+        padding-top: 5px;
+      }
