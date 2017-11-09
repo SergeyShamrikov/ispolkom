@@ -284,17 +284,23 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="file"]).input_light,
 	border-radius: 50%;
 	width: 40px;
 	height: 40px;
-	box-shadow: 0 0 0 3px #e0e0e0;
+	box-shadow: 0 1px 1px 3px #e0e0e0;;
 	display: inline-block;
 	color: #ffffff;
 	text-align: center;
 	font-size: 20px;
 	line-height: 40px;
+	cursor: pointer;
+}
+
+.icon_btn_plus:hover{
+	background-color: #e6e6e6;
 }
 
 .input_box5 span{
 	padding-left: 15px;
 	line-height: 40px;
 	color: #777777;
+	font-weight: 600;
 }
 
